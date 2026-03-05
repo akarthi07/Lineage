@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  neo4j:
+    image: neo4j:community
+    container_name: lineage-neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/lineagepassword
+    volumes:
+      - neo4j_data:/data
+  redis:
+    image: redis:alpine
+    container_name: lineage-redis
+    ports:
+      - "6379:6379"
+volumes:
+  neo4j_data:
