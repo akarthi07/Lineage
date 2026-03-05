@@ -1,0 +1,721 @@
+{
+  "version": "1.0",
+  "description": "50 curated seed artists for Lineage MVP. Covers 7 genre groups with intentional underground weighting. Known influences supplement API discovery — prioritising connections MusicBrainz and Last.fm are likely to miss.",
+  "total_artists": 50,
+  "lastfm_coverage_notes": {
+    "hyperpop_digicore": "GOOD — strong scrobble culture among PC Music / digicore listeners. Similar-artist chains are dense for Charli, A.G. Cook, Danny L Harle. Underground acts (Jane Remover, Alice Gas) return 5–10 similars.",
+    "rock_shoegaze": "EXCELLENT — shoegaze/post-punk is the most data-rich genre on Last.fm. Every artist returns 15+ similars with high confidence.",
+    "rnb_alt_rnb": "MODERATE — mainstream tier is well covered. Dijon, Mk.gee, Destin Conrad return ~5–8 similars. Jean Dawson is sparse (~3). MusicBrainz has solid R&B influence docs.",
+    "pop_art_pop": "GOOD — Caroline Polachek, Rina Sawayama, Ethel Cain all return strong chains. yeule ~6 similars. Bladee covered under dark_plugg.",
+    "rap_mainstream": "GOOD — mainstream hip-hop excellent. JPEGMAFIA, Navy Blue, Mavi drop to 5–8 similars but MusicBrainz has strong underground rap coverage.",
+    "underground_rap_plugg": "POOR-MODERATE — osamason, BabySantana, Autumn!, Summrs have <5 Last.fm similars. This scene lives on SoundCloud. Lean on curated known_influences heavily for these artists.",
+    "dark_plugg_drain": "POOR — Bladee and Ecco2k are OK (~8 similars). Cartier God, KanKan, Izaya Tiji are very sparse. Cash Cobain returns drill similars but not the sample-drill niche specifically."
+  },
+  "artists": [
+
+    {
+      "name": "Charli XCX",
+      "genre_group": "hyperpop_digicore",
+      "tier": "mainstream",
+      "seed_depth": 3,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "SOPHIE", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "SOPHIE produced and co-wrote key tracks; defined the PC Music hyperpop template" },
+        { "artist": "A.G. Cook", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.97, "source": "interview", "notes": "Primary PC Music producer; shaped Charli's maximalist aesthetic from 2016 onward" },
+        { "artist": "Robyn", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.85, "source": "interview", "notes": "Cited directly; dance-pop emotion as template" },
+        { "artist": "Carly Rae Jepsen", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.78, "source": "editorial", "notes": "Maximalist pop songwriting approach" },
+        { "artist": "Madonna", "relationship_type": "influenced by", "strength": 0.60, "confidence": 0.72, "source": "editorial", "notes": "Art pop reinvention cycle" }
+      ]
+    },
+
+    {
+      "name": "A.G. Cook",
+      "genre_group": "hyperpop_digicore",
+      "tier": "mid-tier",
+      "seed_depth": 3,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "SOPHIE", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "PC Music co-founder and primary peer; shared aesthetics" },
+        { "artist": "Carly Rae Jepsen", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.88, "source": "interview", "notes": "Cited as primary pop songwriting influence; produced remixes" },
+        { "artist": "Xenomania", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.72, "source": "editorial", "notes": "UK maximalist pop production collective; Girls Aloud era" },
+        { "artist": "Aphex Twin", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "interview", "notes": "Electronic music production obsession" }
+      ]
+    },
+
+    {
+      "name": "Danny L Harle",
+      "genre_group": "hyperpop_digicore",
+      "tier": "mid-tier",
+      "seed_depth": 3,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "A.G. Cook", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.96, "source": "interview", "notes": "PC Music founding member; direct creative partnership" },
+        { "artist": "SOPHIE", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "editorial", "notes": "Club music / hyperpop shared aesthetic" },
+        { "artist": "Rustie", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.80, "source": "editorial", "notes": "Glasgow post-dubstep maximalism; direct stylistic predecessor" },
+        { "artist": "Todd Terje", "relationship_type": "influenced by", "strength": 0.62, "confidence": 0.72, "source": "editorial", "notes": "Italo disco revival; emotional electronic pop" },
+        { "artist": "Daft Punk", "relationship_type": "influenced by", "strength": 0.70, "confidence": 0.82, "source": "editorial", "notes": "Filtered house / melodic electronic foundation" }
+      ]
+    },
+
+    {
+      "name": "Jane Remover",
+      "genre_group": "hyperpop_digicore",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Bladee", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.90, "source": "interview", "notes": "Drain aesthetic crosses into Jane Remover's digital-emo sound" },
+        { "artist": "My Bloody Valentine", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.88, "source": "editorial", "notes": "Shoegaze texture layered into digital production" },
+        { "artist": "Tirzah", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.85, "source": "editorial", "notes": "UK minimalist electronic; intimate vocals" },
+        { "artist": "Four Tet", "relationship_type": "influenced by", "strength": 0.70, "confidence": 0.80, "source": "editorial", "notes": "IDM / folktronica fragmentation" },
+        { "artist": "Black Midi", "relationship_type": "from same scene", "strength": 0.60, "confidence": 0.70, "source": "research", "notes": "UK experimental scene crossover" }
+      ]
+    },
+
+    {
+      "name": "Frost Children",
+      "genre_group": "hyperpop_digicore",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "100 gecs", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.90, "source": "editorial", "notes": "Hyper-maximalist digicore / hyperpop template" },
+        { "artist": "A.G. Cook", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.85, "source": "editorial", "notes": "PC Music production approach" },
+        { "artist": "Alice Gas", "relationship_type": "from same scene", "strength": 0.72, "confidence": 0.80, "source": "research", "notes": "Shared underground hyperpop scene" },
+        { "artist": "Arca", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.75, "source": "editorial", "notes": "Avant-garde production texture" }
+      ]
+    },
+
+    {
+      "name": "Alice Gas",
+      "genre_group": "hyperpop_digicore",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "SOPHIE", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "SOPHIE as foundational hyperpop influence; directly cited" },
+        { "artist": "A.G. Cook", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.88, "source": "editorial", "notes": "PC Music production and aesthetic" },
+        { "artist": "Arca", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.80, "source": "editorial", "notes": "Avant-garde / body music influence" },
+        { "artist": "Grimes", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.75, "source": "editorial", "notes": "DIY art pop / hypnagogic pop lineage" }
+      ]
+    },
+
+    {
+      "name": "Lucy Bedroque",
+      "genre_group": "hyperpop_digicore",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "A.G. Cook", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.82, "source": "editorial", "notes": "PC Music hyperpop production framework" },
+        { "artist": "Jane Remover", "relationship_type": "from same scene", "strength": 0.75, "confidence": 0.80, "source": "research", "notes": "Shared digicore / digital-emo underground" },
+        { "artist": "Frost Children", "relationship_type": "from same scene", "strength": 0.70, "confidence": 0.78, "source": "research", "notes": "Digicore SoundCloud scene overlap" }
+      ]
+    },
+
+    {
+      "name": "Radiohead",
+      "genre_group": "rock_shoegaze",
+      "tier": "mainstream",
+      "seed_depth": 3,
+      "lastfm_coverage": "excellent",
+      "known_influences": [
+        { "artist": "Talk Talk", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.95, "source": "interview", "notes": "Thom Yorke cited Spirit of Eden as direct template for OK Computer onward" },
+        { "artist": "Can", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.93, "source": "interview", "notes": "Krautrock rhythm and studio-as-instrument" },
+        { "artist": "Pixies", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.97, "source": "interview", "notes": "Quiet-loud dynamic directly cited; primary early influence" },
+        { "artist": "Scott Walker", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.88, "source": "interview", "notes": "Orchestral art pop; darkness and grandeur" },
+        { "artist": "Wire", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.84, "source": "editorial", "notes": "Minimalist post-punk abstraction" },
+        { "artist": "Brian Eno", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.90, "source": "interview", "notes": "Ambient production philosophy; studio process" }
+      ]
+    },
+
+    {
+      "name": "My Bloody Valentine",
+      "genre_group": "rock_shoegaze",
+      "tier": "mid-tier",
+      "seed_depth": 3,
+      "lastfm_coverage": "excellent",
+      "known_influences": [
+        { "artist": "The Jesus and Mary Chain", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.97, "source": "musicbrainz", "notes": "Noise-pop template; feedback guitar; the direct predecessor" },
+        { "artist": "Cocteau Twins", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Ethereal vocal texture; Kevin Shields directly cited" },
+        { "artist": "Hüsker Dü", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "interview", "notes": "Noise intensity and melodic punk" },
+        { "artist": "Sonic Youth", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Alternative guitar tunings; noise rock" },
+        { "artist": "Neil Young", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.78, "source": "interview", "notes": "Guitar feedback as emotional expression" }
+      ]
+    },
+
+    {
+      "name": "Deftones",
+      "genre_group": "rock_shoegaze",
+      "tier": "mid-tier",
+      "seed_depth": 3,
+      "lastfm_coverage": "excellent",
+      "known_influences": [
+        { "artist": "Failure", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "Chino Moreno has cited Fantastic Planet repeatedly; heavy shoegaze template" },
+        { "artist": "Hum", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Space rock density; You'd Prefer an Astronaut as touchstone" },
+        { "artist": "Depeche Mode", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.90, "source": "interview", "notes": "Synth-driven dark romanticism; Chino frequently cites DM" },
+        { "artist": "The Cure", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.87, "source": "editorial", "notes": "Gothic post-punk; atmospheric melancholy" },
+        { "artist": "Siouxsie and the Banshees", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Dark post-punk art rock" }
+      ]
+    },
+
+    {
+      "name": "Deafheaven",
+      "genre_group": "rock_shoegaze",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "excellent",
+      "known_influences": [
+        { "artist": "Alcest", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Blackgaze originator; Neige directly cited as blueprint" },
+        { "artist": "Wolves in the Throne Room", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Atmospheric black metal; Pacific Northwest scene" },
+        { "artist": "My Bloody Valentine", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Shoegaze wall of sound integrated into black metal" },
+        { "artist": "Explosions in the Sky", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.87, "source": "editorial", "notes": "Post-rock dynamics; emotional arc" },
+        { "artist": "Agalloch", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.84, "source": "editorial", "notes": "Black metal / folk / post-rock crossover" }
+      ]
+    },
+
+    {
+      "name": "Nothing",
+      "genre_group": "rock_shoegaze",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "My Bloody Valentine", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Core shoegaze influence; Domino Santantonio has cited directly" },
+        { "artist": "Slowdive", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "editorial", "notes": "Dream pop / shoegaze haze" },
+        { "artist": "Hum", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "interview", "notes": "Heavy shoegaze template" },
+        { "artist": "Depeche Mode", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "interview", "notes": "Dark electronic influence; band has worn DM shirts onstage" },
+        { "artist": "Deftones", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Heavy / dreamy tension balance" }
+      ]
+    },
+
+    {
+      "name": "Narrow Head",
+      "genre_group": "rock_shoegaze",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "My Bloody Valentine", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.94, "source": "editorial", "notes": "Primary shoegaze influence across all records" },
+        { "artist": "Nothing", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "interview", "notes": "Direct scene predecessor; heavy shoegaze revival" },
+        { "artist": "Smashing Pumpkins", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.89, "source": "editorial", "notes": "Alt rock / grunge energy underlying shoegaze" },
+        { "artist": "Deftones", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Heavy dream pop balance" }
+      ]
+    },
+
+    {
+      "name": "Turnover",
+      "genre_group": "rock_shoegaze",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "American Football", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "interview", "notes": "Midwest emo architecture; introspective melancholy" },
+        { "artist": "Mineral", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "editorial", "notes": "Midwest emo template; emotional transparency" },
+        { "artist": "Cap'n Jazz", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.87, "source": "editorial", "notes": "Emo pioneers; chaotic energy to melodic drift" },
+        { "artist": "Sunny Day Real Estate", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Indie / emo depth; emotional weight" },
+        { "artist": "The Promise Ring", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.80, "source": "editorial", "notes": "Midwest emo continuity; melodic approach" }
+      ]
+    },
+
+    {
+      "name": "Frank Ocean",
+      "genre_group": "rnb_alt_rnb",
+      "tier": "mainstream",
+      "seed_depth": 3,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Stevie Wonder", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "Melodic soul and concept album ambition; Songs in the Key of Life as touchstone" },
+        { "artist": "Marvin Gaye", "relationship_type": "influenced by", "strength": 0.87, "confidence": 0.93, "source": "interview", "notes": "Confessional concept albums; What's Going On lineage" },
+        { "artist": "Pharrell Williams", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Production mentor; Neptunes aesthetic absorbed" },
+        { "artist": "MF DOOM", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.88, "source": "interview", "notes": "Lyrical density; wordplay under emotional delivery" },
+        { "artist": "Arthur Russell", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Avant-garde soul / experimental intimacy" }
+      ]
+    },
+
+    {
+      "name": "Daniel Caesar",
+      "genre_group": "rnb_alt_rnb",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Sade", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "Smooth sophisticated R&B; cool restraint as emotional tool" },
+        { "artist": "Luther Vandross", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Vocal R&B tradition; devotional delivery" },
+        { "artist": "Frank Ocean", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Alt R&B approach; introspective template" },
+        { "artist": "Marvin Gaye", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.90, "source": "editorial", "notes": "Classic soul; sensual delivery" }
+      ]
+    },
+
+    {
+      "name": "Ravyn Lenae",
+      "genre_group": "rnb_alt_rnb",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Minnie Riperton", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Soprano range and ethereal vocal delivery; Chicago lineage" },
+        { "artist": "Erykah Badu", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "interview", "notes": "Neo-soul foundation; mystical R&B" },
+        { "artist": "Stevie Wonder", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "editorial", "notes": "Chicago soul lineage; melodic complexity" },
+        { "artist": "Moses Sumney", "relationship_type": "from same scene", "strength": 0.72, "confidence": 0.80, "source": "editorial", "notes": "Experimental vocal R&B peer" },
+        { "artist": "Steve Lacy", "relationship_type": "from same scene", "strength": 0.75, "confidence": 0.83, "source": "editorial", "notes": "Modern R&B production aesthetic crossover" }
+      ]
+    },
+
+    {
+      "name": "Dijon",
+      "genre_group": "rnb_alt_rnb",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Bill Withers", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "interview", "notes": "Understated soul; direct and honest emotional delivery" },
+        { "artist": "Bonnie Raitt", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.89, "source": "interview", "notes": "Blues-inflected folk soul; guitar-driven intimacy" },
+        { "artist": "Karen Dalton", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Raw folk emotionality; sparse arrangements" },
+        { "artist": "Arthur Russell", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.83, "source": "editorial", "notes": "Experimental soul / folk boundary-crossing" },
+        { "artist": "Serge Gainsbourg", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.75, "source": "editorial", "notes": "Continental aesthetic; playful and melancholic" }
+      ]
+    },
+
+    {
+      "name": "Mk.gee",
+      "genre_group": "rnb_alt_rnb",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Alex G", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "interview", "notes": "Bedroom indie rock; DIY lo-fi production" },
+        { "artist": "Jeff Buckley", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.89, "source": "editorial", "notes": "Guitar-led emotional intensity; vocal fragility" },
+        { "artist": "Prince", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "interview", "notes": "Eclectic genre refusal; hypnotic guitar playing" },
+        { "artist": "Weezer", "relationship_type": "influenced by", "strength": 0.68, "confidence": 0.78, "source": "editorial", "notes": "Melodic guitar pop; emotional nerdiness" }
+      ]
+    },
+
+    {
+      "name": "Destin Conrad",
+      "genre_group": "rnb_alt_rnb",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Frank Ocean", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.94, "source": "interview", "notes": "Alt R&B template; introspective vulnerability" },
+        { "artist": "Daniel Caesar", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "editorial", "notes": "Smooth vocal R&B approach" },
+        { "artist": "SZA", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.87, "source": "editorial", "notes": "Modern alt R&B; emotional candour" }
+      ]
+    },
+
+    {
+      "name": "Jean Dawson",
+      "genre_group": "rnb_alt_rnb",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "TV on the Radio", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "interview", "notes": "Genre-blending rock and R&B; politically aware art" },
+        { "artist": "Bad Brains", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.89, "source": "interview", "notes": "Hardcore punk energy fused with reggae; Black punk lineage" },
+        { "artist": "Fishbone", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Genre fusion; ska-punk-funk-soul" },
+        { "artist": "Meshell Ndegeocello", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.83, "source": "editorial", "notes": "Boundary-crossing Black music; bass-driven hybrid" },
+        { "artist": "Outkast", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Southern genre experimentation; conceptual ambition" }
+      ]
+    },
+
+    {
+      "name": "Billie Eilish",
+      "genre_group": "pop_art_pop",
+      "tier": "mainstream",
+      "seed_depth": 3,
+      "lastfm_coverage": "excellent",
+      "known_influences": [
+        { "artist": "Lana Del Rey", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Dark cinematic pop; melancholic glamour" },
+        { "artist": "Tyler, the Creator", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.90, "source": "interview", "notes": "Production approach; unconventional album construction" },
+        { "artist": "Lorde", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "editorial", "notes": "Minimalist pop production; teenage interiority" },
+        { "artist": "Massive Attack", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "interview", "notes": "Dark ambient pop; subterranean bass" }
+      ]
+    },
+
+    {
+      "name": "Caroline Polachek",
+      "genre_group": "pop_art_pop",
+      "tier": "mid-tier",
+      "seed_depth": 3,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Kate Bush", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.97, "source": "interview", "notes": "Art pop template; theatrical vocal delivery" },
+        { "artist": "Bjork", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "Experimental vocal pop; Iceland avant-garde" },
+        { "artist": "Arthur Russell", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.89, "source": "interview", "notes": "Avant-garde dance / folk crossover; downtown NYC lineage" },
+        { "artist": "Siouxsie and the Banshees", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.84, "source": "editorial", "notes": "Post-punk art rock darkness" },
+        { "artist": "Chairlift", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.96, "source": "research", "notes": "Her own prior band; direct stylistic predecessor to solo work" }
+      ]
+    },
+
+    {
+      "name": "Rina Sawayama",
+      "genre_group": "pop_art_pop",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Carly Rae Jepsen", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.89, "source": "interview", "notes": "Maximalist pop songwriting; cult pop adjacent" },
+        { "artist": "SOPHIE", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "editorial", "notes": "Hyperpop production aesthetic" },
+        { "artist": "Britney Spears", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Y2K pop template; directly cited" },
+        { "artist": "Janet Jackson", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "interview", "notes": "Dance pop choreography and control" }
+      ]
+    },
+
+    {
+      "name": "Ethel Cain",
+      "genre_group": "pop_art_pop",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Lana Del Rey", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Cinematic dark pop; American mythology and doom" },
+        { "artist": "Grouper", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "interview", "notes": "Lo-fi ambient folk; dissolution" },
+        { "artist": "Chelsea Wolfe", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "editorial", "notes": "Folk / doom crossover; Southern Gothic darkness" },
+        { "artist": "Mazzy Star", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "editorial", "notes": "Dream pop sedation; hazy melancholy" },
+        { "artist": "Phoebe Bridgers", "relationship_type": "from same scene", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Confessional indie folk peer" }
+      ]
+    },
+
+    {
+      "name": "Magdalena Bay",
+      "genre_group": "pop_art_pop",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Daft Punk", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Electronic pop sheen; conceptual album production" },
+        { "artist": "ABBA", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Melodic pop structure; emotional hook writing" },
+        { "artist": "LCD Soundsystem", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "editorial", "notes": "Dance rock; emotionally intelligent club music" },
+        { "artist": "Steely Dan", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Sophisticated pop craft; studio perfectionism" },
+        { "artist": "PC Music", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Hyperpop aesthetics absorbed into their baroque pop" }
+      ]
+    },
+
+    {
+      "name": "yeule",
+      "genre_group": "pop_art_pop",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Cocteau Twins", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Ethereal dream pop; Elizabeth Fraser vocal influence" },
+        { "artist": "Slowdive", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "interview", "notes": "Shoegaze ambience and texture" },
+        { "artist": "Bladee", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.89, "source": "interview", "notes": "Drain aesthetic; collaborated with Bladee on Faena" },
+        { "artist": "Grouper", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "editorial", "notes": "Ambient folk disintegration" },
+        { "artist": "Tirzah", "relationship_type": "from same scene", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Minimalist electronic intimacy" }
+      ]
+    },
+
+    {
+      "name": "Kendrick Lamar",
+      "genre_group": "rap_mainstream",
+      "tier": "mainstream",
+      "seed_depth": 3,
+      "lastfm_coverage": "excellent",
+      "known_influences": [
+        { "artist": "2Pac", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.96, "source": "interview", "notes": "West Coast storytelling; Compton lineage; directly cited" },
+        { "artist": "Mos Def", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Conscious hip-hop depth and lyricism" },
+        { "artist": "Jay Electronica", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Lyrical density and mystical rap philosophy" },
+        { "artist": "Dr. Dre", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.93, "source": "interview", "notes": "Production mentor; West Coast sonic palette" },
+        { "artist": "Black Star", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.90, "source": "editorial", "notes": "Political hip-hop; Mos Def and Talib Kweli together" }
+      ]
+    },
+
+    {
+      "name": "Tyler, the Creator",
+      "genre_group": "rap_mainstream",
+      "tier": "mainstream",
+      "seed_depth": 3,
+      "lastfm_coverage": "excellent",
+      "known_influences": [
+        { "artist": "Pharrell Williams", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.97, "source": "interview", "notes": "Production philosophy and Neptunes aesthetic; obsessive direct influence" },
+        { "artist": "MF DOOM", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Lo-fi aesthetic; wordplay; mask / alter ego archetype" },
+        { "artist": "Kanye West", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.93, "source": "interview", "notes": "Unorthodox mainstream rap production; conceptual albums" },
+        { "artist": "Outkast", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.89, "source": "interview", "notes": "Genre refusal; Southern eccentric rap" }
+      ]
+    },
+
+    {
+      "name": "JID",
+      "genre_group": "rap_mainstream",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "André 3000", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Eccentric delivery and cadence shifts; most cited influence" },
+        { "artist": "Kendrick Lamar", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Lyrical approach and West Coast influence on Atlanta rapper" },
+        { "artist": "J. Cole", "relationship_type": "from same scene", "strength": 0.82, "confidence": 0.90, "source": "editorial", "notes": "Dreamville label; collaborative influence" },
+        { "artist": "Nas", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Lyrical density and East Coast tradition" }
+      ]
+    },
+
+    {
+      "name": "Denzel Curry",
+      "genre_group": "rap_mainstream",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Spaceghostpurrp", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Raider Klan founder; Carol City mentor; direct upstream" },
+        { "artist": "Capital STEEZ", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Underground consciousness; Denzel has named Steez directly" },
+        { "artist": "MF DOOM", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.90, "source": "editorial", "notes": "Mask/alter ego; underground legacy" },
+        { "artist": "Three 6 Mafia", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.87, "source": "editorial", "notes": "Southern dark trap; occult rap energy" }
+      ]
+    },
+
+    {
+      "name": "JPEGMAFIA",
+      "genre_group": "rap_mainstream",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Death Grips", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "Experimental / industrial rap template; confrontational energy" },
+        { "artist": "Public Enemy", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "interview", "notes": "Confrontational political hip-hop; noise-rap lineage" },
+        { "artist": "Clipping.", "relationship_type": "from same scene", "strength": 0.80, "confidence": 0.88, "source": "editorial", "notes": "Noise rap peer; experimental hip-hop overlap" },
+        { "artist": "Moor Mother", "relationship_type": "from same scene", "strength": 0.75, "confidence": 0.83, "source": "editorial", "notes": "Experimental Black music; noise poetry" },
+        { "artist": "Nine Inch Nails", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "interview", "notes": "Industrial noise; Trent Reznor production influence" }
+      ]
+    },
+
+    {
+      "name": "Navy Blue",
+      "genre_group": "rap_mainstream",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "J Dilla", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "interview", "notes": "Soul-sample beat tape foundation; Donuts as template" },
+        { "artist": "Madlib", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "Beat tape aesthetic; crate digging philosophy" },
+        { "artist": "Roc Marciano", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "editorial", "notes": "Underground NY sample rap; minimalist boom-bap" },
+        { "artist": "Ka", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "editorial", "notes": "Introspective NY underground; sparse production" }
+      ]
+    },
+
+    {
+      "name": "Mavi",
+      "genre_group": "rap_mainstream",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Navy Blue", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "interview", "notes": "Introspective underground rap; direct influence cited" },
+        { "artist": "Medhane", "relationship_type": "from same scene", "strength": 0.85, "confidence": 0.91, "source": "editorial", "notes": "NYC underground scene peer; overlapping audience" },
+        { "artist": "Lojii", "relationship_type": "from same scene", "strength": 0.80, "confidence": 0.87, "source": "editorial", "notes": "Lo-fi conscious hip-hop peer" },
+        { "artist": "Pro Era", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.83, "source": "editorial", "notes": "Brooklyn underground collective lineage" }
+      ]
+    },
+
+    {
+      "name": "Playboi Carti",
+      "genre_group": "underground_rap_plugg",
+      "tier": "mainstream",
+      "seed_depth": 3,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Young Thug", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.95, "source": "interview", "notes": "Melodic/abstract vocal delivery; most cited influence" },
+        { "artist": "Future", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.93, "source": "editorial", "notes": "Trap aesthetic; melancholic auto-tune" },
+        { "artist": "Gucci Mane", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.87, "source": "editorial", "notes": "Atlanta trap foundation" },
+        { "artist": "Lil Uzi Vert", "relationship_type": "from same scene", "strength": 0.85, "confidence": 0.92, "source": "editorial", "notes": "SoundCloud era peer; mutual aesthetic influence" }
+      ]
+    },
+
+    {
+      "name": "Ken Carson",
+      "genre_group": "underground_rap_plugg",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Playboi Carti", "relationship_type": "influenced by", "strength": 0.95, "confidence": 0.98, "source": "interview", "notes": "Opium label founder and direct mentor; primary influence" },
+        { "artist": "Destroy Lonely", "relationship_type": "from same scene", "strength": 0.88, "confidence": 0.94, "source": "editorial", "notes": "Opium label peer; mutual sonic development" },
+        { "artist": "Travis Scott", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Rage production aesthetic; atmospheric trap" },
+        { "artist": "Lil Pump", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.75, "source": "editorial", "notes": "SoundCloud era energy and delivery" }
+      ]
+    },
+
+    {
+      "name": "Destroy Lonely",
+      "genre_group": "underground_rap_plugg",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Playboi Carti", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.97, "source": "interview", "notes": "Opium label; direct aesthetic influence and guidance" },
+        { "artist": "Ken Carson", "relationship_type": "from same scene", "strength": 0.88, "confidence": 0.94, "source": "editorial", "notes": "Opium label peer" },
+        { "artist": "Yung Lean", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.84, "source": "editorial", "notes": "Melancholic delivery; Sad Boys influence on rage aesthetic" }
+      ]
+    },
+
+    {
+      "name": "Yeat",
+      "genre_group": "underground_rap_plugg",
+      "tier": "mid-tier",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Future", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "editorial", "notes": "Melodic trap foundation; Future is cited as key influence" },
+        { "artist": "Playboi Carti", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.90, "source": "editorial", "notes": "Rage aesthetic absorption" },
+        { "artist": "Shakewell", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.83, "source": "editorial", "notes": "SFO underground rap; earlier SoundCloud scene" },
+        { "artist": "Lil Pump", "relationship_type": "influenced by", "strength": 0.65, "confidence": 0.75, "source": "editorial", "notes": "SoundCloud wave energy" }
+      ]
+    },
+
+    {
+      "name": "osamason",
+      "genre_group": "underground_rap_plugg",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "Lucki", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.94, "source": "research", "notes": "Melodic introspective plugg; Lucki is the upstream pioneer for this emotional delivery" },
+        { "artist": "Lil Ugly Mane", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "research", "notes": "Dark Memphis-influenced underground sound; esoteric aesthetic" },
+        { "artist": "DJ Smokey", "relationship_type": "influenced by", "strength": 0.82, "confidence": 0.88, "source": "research", "notes": "Plugg production pioneer; textures that defined the sub-genre" },
+        { "artist": "Ericdoa", "relationship_type": "from same scene", "strength": 0.78, "confidence": 0.85, "source": "research", "notes": "Digicore / plugg crossover scene; shared SoundCloud pipeline" },
+        { "artist": "Sematary", "relationship_type": "influenced by", "strength": 0.68, "confidence": 0.76, "source": "research", "notes": "Horror plug aesthetic; dark underground energy" }
+      ]
+    },
+
+    {
+      "name": "BabySantana",
+      "genre_group": "underground_rap_plugg",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "osamason", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.95, "source": "research", "notes": "Primary direct plugg influence; same SoundCloud scene" },
+        { "artist": "Summrs", "relationship_type": "from same scene", "strength": 0.85, "confidence": 0.91, "source": "research", "notes": "Plugg / rage scene peer" },
+        { "artist": "Autumn!", "relationship_type": "from same scene", "strength": 0.82, "confidence": 0.89, "source": "research", "notes": "Underground plugg scene direct overlap" },
+        { "artist": "Lucki", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.83, "source": "research", "notes": "Introspective plugg foundation" }
+      ]
+    },
+
+    {
+      "name": "Autumn!",
+      "genre_group": "underground_rap_plugg",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "osamason", "relationship_type": "influenced by", "strength": 0.93, "confidence": 0.96, "source": "research", "notes": "Primary upstream influence; same plugg underground network" },
+        { "artist": "Summrs", "relationship_type": "from same scene", "strength": 0.88, "confidence": 0.93, "source": "research", "notes": "Direct scene peer; collaborative history" },
+        { "artist": "BabySantana", "relationship_type": "from same scene", "strength": 0.82, "confidence": 0.89, "source": "research", "notes": "Plugg underground scene overlap" },
+        { "artist": "DJ Smokey", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.81, "source": "research", "notes": "Plugg production style" }
+      ]
+    },
+
+    {
+      "name": "Summrs",
+      "genre_group": "underground_rap_plugg",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "osamason", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.95, "source": "research", "notes": "Foundational plugg influence for this sub-scene" },
+        { "artist": "Lucki", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "research", "notes": "Melodic underground rap; introspective delivery" },
+        { "artist": "Autumn!", "relationship_type": "from same scene", "strength": 0.88, "confidence": 0.93, "source": "research", "notes": "Direct scene peer" },
+        { "artist": "BabySantana", "relationship_type": "from same scene", "strength": 0.80, "confidence": 0.87, "source": "research", "notes": "Plugg scene overlap" }
+      ]
+    },
+
+    {
+      "name": "Bladee",
+      "genre_group": "dark_plugg_drain",
+      "tier": "underground",
+      "seed_depth": 3,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Yung Lean", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.96, "source": "interview", "notes": "Drain Gang co-founder; Sad! era originator; Stockholm aesthetic" },
+        { "artist": "Thaiboy Digital", "relationship_type": "from same scene", "strength": 0.92, "confidence": 0.97, "source": "research", "notes": "Drain Gang founding member; direct creative partner" },
+        { "artist": "Ecco2k", "relationship_type": "from same scene", "strength": 0.92, "confidence": 0.97, "source": "research", "notes": "Drain Gang; core creative collective" },
+        { "artist": "Three 6 Mafia", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "interview", "notes": "Dark / esoteric rap; Memphis underground lineage" },
+        { "artist": "Salem", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "Witch house meets rap; early internet dark aesthetic" }
+      ]
+    },
+
+    {
+      "name": "Ecco2k",
+      "genre_group": "dark_plugg_drain",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "good",
+      "known_influences": [
+        { "artist": "Bladee", "relationship_type": "from same scene", "strength": 0.95, "confidence": 0.98, "source": "research", "notes": "Drain Gang; inseparable creative partners" },
+        { "artist": "Thaiboy Digital", "relationship_type": "from same scene", "strength": 0.90, "confidence": 0.96, "source": "research", "notes": "Drain Gang co-member" },
+        { "artist": "Yung Lean", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "research", "notes": "Sad Boys origin; cloud rap / drain foundation" },
+        { "artist": "Crystal Castles", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.83, "source": "editorial", "notes": "Electronic / punk / noise crossover; damaged pop aesthetic" }
+      ]
+    },
+
+    {
+      "name": "Cartier God",
+      "genre_group": "dark_plugg_drain",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "DJ Smokey", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "research", "notes": "Plugg production pioneer; direct upstream for the sub-genre texture" },
+        { "artist": "DJ Yung Vamp", "relationship_type": "influenced by", "strength": 0.90, "confidence": 0.94, "source": "research", "notes": "Purple rain era plugg; skeletal beat architecture" },
+        { "artist": "Soza", "relationship_type": "from same scene", "strength": 0.85, "confidence": 0.91, "source": "research", "notes": "Plugg production scene; overlapping producers" },
+        { "artist": "Sematary", "relationship_type": "from same scene", "strength": 0.80, "confidence": 0.88, "source": "research", "notes": "Horror plug scene; dark production aesthetic" },
+        { "artist": "Richie Souf", "relationship_type": "influenced by", "strength": 0.75, "confidence": 0.83, "source": "research", "notes": "ATL underground producer; trap-to-plugg lineage" }
+      ]
+    },
+
+    {
+      "name": "Lancey Foux",
+      "genre_group": "dark_plugg_drain",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Playboi Carti", "relationship_type": "influenced by", "strength": 0.88, "confidence": 0.94, "source": "interview", "notes": "Rage / melodic trap absorption from Atlanta to UK" },
+        { "artist": "Young Thug", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.92, "source": "editorial", "notes": "Melodic delivery; abstract vocal approach" },
+        { "artist": "Skepta", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.88, "source": "editorial", "notes": "UK grime foundation; London background" },
+        { "artist": "Blocboy JB", "relationship_type": "influenced by", "strength": 0.68, "confidence": 0.78, "source": "editorial", "notes": "Trap cadence influence" }
+      ]
+    },
+
+    {
+      "name": "KanKan",
+      "genre_group": "dark_plugg_drain",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "Cartier God", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.95, "source": "research", "notes": "Direct plugg production influence; same production lineage" },
+        { "artist": "DJ Smokey", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "research", "notes": "Plugg pioneer; foundational sound" },
+        { "artist": "osamason", "relationship_type": "influenced by", "strength": 0.80, "confidence": 0.87, "source": "research", "notes": "Dark plugg vocal / melodic style" }
+      ]
+    },
+
+    {
+      "name": "Izaya Tiji",
+      "genre_group": "dark_plugg_drain",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "poor",
+      "known_influences": [
+        { "artist": "osamason", "relationship_type": "influenced by", "strength": 0.92, "confidence": 0.96, "source": "research", "notes": "Primary upstream; same SoundCloud plugg scene" },
+        { "artist": "Ken Carson", "relationship_type": "influenced by", "strength": 0.85, "confidence": 0.91, "source": "research", "notes": "Opium aesthetic crossover into plugg underground" },
+        { "artist": "Cartier God", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "research", "notes": "Production style influence" }
+      ]
+    },
+
+    {
+      "name": "Cash Cobain",
+      "genre_group": "dark_plugg_drain",
+      "tier": "underground",
+      "seed_depth": 2,
+      "lastfm_coverage": "moderate",
+      "known_influences": [
+        { "artist": "Dougie B", "relationship_type": "from same scene", "strength": 0.88, "confidence": 0.93, "source": "research", "notes": "Sample drill / sexy drill NYC scene co-creator" },
+        { "artist": "B-Lovee", "relationship_type": "from same scene", "strength": 0.85, "confidence": 0.91, "source": "research", "notes": "NYC sample drill peer; collaborative history" },
+        { "artist": "A Boogie wit da Hoodie", "relationship_type": "influenced by", "strength": 0.78, "confidence": 0.86, "source": "editorial", "notes": "NYC melodic rap; Highbridge lineage" },
+        { "artist": "Sheff G", "relationship_type": "influenced by", "strength": 0.72, "confidence": 0.82, "source": "editorial", "notes": "Brooklyn drill foundation" }
+      ]
+    }
+
+  ]
+}

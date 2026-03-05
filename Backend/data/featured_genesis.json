@@ -1,46 +1,150 @@
 {
   "id": "dark-plugg",
   "name": "Dark Plugg",
-  "description": "An underground subgenre emerging from the intersection of Atlanta plugg production and gothic/dark aesthetics. Characterized by minor-key melodies, lo-fi 808s, and a deliberately cold, detached vocal style. Mostly anonymous producers and artists operating outside traditional label structures.",
-  "geography": ["Atlanta, GA", "New York, NY", "Internet-native"],
+  "description": "An underground micro-genre born from the collision of Atlanta plugg production and a self-conscious dark aesthetic — gothic atmosphere, horror-film textures, and deliberately cold vocals. Emerged almost entirely on SoundCloud between 2019 and 2021 with no label infrastructure, no press coverage, and no mainstream entry point. The artists involved built an insular scene through anonymous producer tags, SoundCloud reposts, and tight-knit collaborator networks. It sits downstream from Memphis phonk, Atlanta plugg, and the SoundCloud rage wave — and it feeds directly into the Opium label sound, digicore, and contemporary underground rap.",
+  "geography": ["Atlanta, GA", "New York, NY", "Memphis, TN", "Internet-native"],
   "timeline": {
     "emerged": 2019,
-    "peak_underground": 2021,
-    "current_status": "expanding"
+    "proto_period": "2017–2018: Plugg producers (DJ Smokey, DJ Yung Vamp, Richie Souf) begin stripping trap back to skeletal 808s and minor-key piano. Memphis phonk aesthetics start bleeding into Atlanta plugg.",
+    "emergence": "2019: osamason, Summrs, Autumn!, and BabySantana begin posting on SoundCloud. The sound has a name — dark plugg — within the community, though never officially coined.",
+    "peak_underground": "2020–2021: Cartier God, KanKan, and Izaya Tiji deepen the production language. Sematary introduces horror plug — a more extreme branch. The scene reaches ~50 active artists.",
+    "crossover_pressure": "2022: Yeat, Ken Carson, and Destroy Lonely pull elements of the aesthetic into Opium/mainstream adjacent rap. Dark plugg artists remain underground but gain visibility.",
+    "current_status": "2024: Expanding — core artists still operating underground, second wave forming. Cash Cobain and NYC sample drill begin pulling adjacent energy toward a more melodic, sample-based offshoot.",
+    "current_status_short": "Expanding"
   },
   "lineage_roots": [
-    { "name": "Plugg", "description": "Parent genre — Atlanta production style with melodic 808s" },
-    { "name": "SoundCloud Rap", "description": "Distribution method and aesthetic DNA" },
-    { "name": "Rage", "description": "Shared energy and distorted production palette" }
+    {
+      "name": "Plugg",
+      "role": "Parent genre",
+      "description": "Atlanta production style developed around 2012–2016: melodic 808s, minor keys, slow tempos, and a heavy sedated atmosphere. Key producers: Richie Souf, Southside, Pi'erre Bourne. Plugg gave dark plugg its sonic skeleton.",
+      "key_figures": ["Richie Souf", "Pi'erre Bourne", "Ethereal"]
+    },
+    {
+      "name": "Memphis Phonk",
+      "role": "Tonal ancestor",
+      "description": "1990s Memphis rap (Three 6 Mafia, Lil Ugly Mane, DJ Screw lineage) contributed the horror-adjacent dark atmosphere, lo-fi cassette texture, and esoteric occult energy that distinguishes dark plugg from regular plugg.",
+      "key_figures": ["Three 6 Mafia", "Lil Ugly Mane", "DJ Smokey"]
+    },
+    {
+      "name": "SoundCloud Rap / Rage",
+      "role": "Distribution and energy source",
+      "description": "The 2017–2018 SoundCloud wave (Lil Pump, XXXTENTACION, Playboi Carti) established the platform infrastructure and distorted 808 palette. Rage production — heavy 808s, pitched-down samples — fed directly into dark plugg's sonic approach.",
+      "key_figures": ["Playboi Carti", "Lil Uzi Vert", "Pi'erre Bourne"]
+    },
+    {
+      "name": "Drain Gang / Bladee",
+      "role": "Aesthetic adjacent",
+      "description": "Stockholm's Drain Gang (Bladee, Ecco2k, Thaiboy Digital, Yung Lean) provided a parallel example of making dark, esoteric, internet-native music outside the industry. Dark plugg artists absorbed the ethos of anonymity and aesthetic-over-commercial.",
+      "key_figures": ["Bladee", "Ecco2k", "Yung Lean"]
+    }
   ],
   "key_artists": [
     {
       "name": "osamason",
-      "role": "Central figure",
+      "role": "Pioneer / Central figure",
+      "active_since": 2018,
       "lastfm_listeners": 427129,
-      "underground_score": 0.3,
-      "tags": ["dark plugg", "plugg", "trap", "rage"]
+      "underground_score": 0.35,
+      "tags": ["dark plugg", "plugg", "underground rap"],
+      "notes": "Widely credited as the artist who gave the sub-genre its emotional core. osamason's melodic introspection and deliberate lo-fi aesthetic set the template others followed."
     },
     {
       "name": "Summrs",
-      "role": "Scene architect",
+      "role": "Scene architect / Production bridge",
+      "active_since": 2019,
       "lastfm_listeners": 180000,
-      "underground_score": 0.5,
-      "tags": ["dark plugg", "plugg", "rap"]
+      "underground_score": 0.52,
+      "tags": ["dark plugg", "plugg", "rap"],
+      "notes": "Developed the production language connecting plugg to rage. Prolific output across 2020–2022 helped define the scene's tempo, tone, and vocal style."
+    },
+    {
+      "name": "Autumn!",
+      "role": "Core underground artist",
+      "active_since": 2019,
+      "lastfm_listeners": 95000,
+      "underground_score": 0.68,
+      "tags": ["dark plugg", "underground rap"],
+      "notes": "One of the purest examples of the dark plugg sound — skeletal beats, sparse delivery, cold atmosphere. Collaborates heavily within the tight-knit network."
+    },
+    {
+      "name": "BabySantana",
+      "role": "Core underground artist",
+      "active_since": 2020,
+      "lastfm_listeners": 72000,
+      "underground_score": 0.72,
+      "tags": ["dark plugg", "underground rap"],
+      "notes": "Embodies the second-wave dark plugg artist — emerged directly from listening to osamason and Summrs, represents the self-replicating nature of the scene."
+    },
+    {
+      "name": "Cartier God",
+      "role": "Production architect",
+      "active_since": 2019,
+      "lastfm_listeners": 48000,
+      "underground_score": 0.80,
+      "tags": ["dark plugg", "production"],
+      "notes": "One of the key producers who codified the dark plugg production sound — sparse kick patterns, minor-key piano stabs, deliberately cheap-sounding 808s that read as aesthetic choice not limitation."
     },
     {
       "name": "Izaya Tiji",
       "role": "Underground core",
+      "active_since": 2020,
       "lastfm_listeners": 85000,
-      "underground_score": 0.7,
-      "tags": ["dark plugg", "underground rap"]
+      "underground_score": 0.70,
+      "tags": ["dark plugg", "underground rap"],
+      "notes": "Connects the osamason/dark plugg world to the Ken Carson / Opium adjacency. Sits at the seam between fully underground and mainstream-facing."
+    },
+    {
+      "name": "KanKan",
+      "role": "Underground production / rap",
+      "active_since": 2020,
+      "lastfm_listeners": 55000,
+      "underground_score": 0.76,
+      "tags": ["dark plugg", "horror plug"],
+      "notes": "Production-focused artist operating at the deepest end of the sub-genre. Shares production credits with Cartier God."
+    },
+    {
+      "name": "Sematary",
+      "role": "Horror plug founder",
+      "active_since": 2019,
+      "lastfm_listeners": 120000,
+      "underground_score": 0.65,
+      "tags": ["horror plug", "dark plugg", "underground rap"],
+      "notes": "Founded the horror plug offshoot — a maximally dark branch using horror film samples, blown-out distortion, and death imagery. Haunt Network collective."
     }
   ],
   "sound_characteristics": [
-    "Minor key melodies",
-    "Lo-fi 808 bass",
-    "Cold, detached vocals",
-    "Sparse percussion",
-    "Gothic atmosphere"
-  ]
+    "Minor key piano melodies",
+    "Sparse lo-fi 808 bass",
+    "Cold detached vocals",
+    "Deliberately skeletal percussion",
+    "Gothic atmosphere",
+    "Horror / esoteric imagery",
+    "SoundCloud-native production quality (intentional lo-fi)",
+    "Slow-to-mid tempo (70–100 BPM)",
+    "Vocal auto-tune used for texture not correction"
+  ],
+  "production_lineage": {
+    "key_producers": [
+      { "name": "DJ Smokey", "role": "Founding plugg producer", "contribution": "Established the skeletal 808 / minor melody template that dark plugg built on" },
+      { "name": "DJ Yung Vamp", "role": "Purple rain era plugg", "contribution": "The deconstructed, near-silent plugg beats that sound like they're falling apart" },
+      { "name": "Richie Souf", "role": "ATL underground producer", "contribution": "Trap-to-plugg production bridge; worked with Playboi Carti early on" },
+      { "name": "Soza", "role": "Dark plugg producer", "contribution": "Contemporary dark plugg production; shared pipeline with Cartier God" },
+      { "name": "Cartier God", "role": "Scene producer / rapper", "contribution": "Codified the 2019-2021 dark plugg production language" }
+    ]
+  },
+  "connections_to_mainstream": [
+    {
+      "artist": "Playboi Carti",
+      "connection": "Carti's Whole Lotta Red (2020) absorbed plugg/rage aesthetics and pushed them into mainstream visibility. Dark plugg artists exist in his shadow but reject the commercial framing."
+    },
+    {
+      "artist": "Ken Carson",
+      "connection": "Carson and Destroy Lonely (Opium label) pulled the plugg aesthetic into the mainstream streaming era. Several dark plugg artists have collaborated or been compared to the Opium sound."
+    },
+    {
+      "artist": "Yeat",
+      "connection": "Yeat's commercial breakthrough brought plugg energy to wide audiences. His rise coincided with dark plugg peak underground moment — parallel evolution, different trajectory."
+    }
+  ],
+  "why_it_matters": "Dark Plugg is a rare example of a sub-genre that emerged, developed a distinct identity, and sustained a community entirely outside industry infrastructure. No blogs covered it during its formation. No labels signed it. The scene policed its own aesthetic through SoundCloud comments, reposts, and producer tags. It is a case study in how contemporary underground music forms: not in cities, not in venues, but in algorithmic recommendation chains on streaming platforms and anonymous comment sections."
 }
