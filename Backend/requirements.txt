@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+spotipy
+neo4j
+redis
+anthropic
+pydantic
+python-dotenv
+requests
+numpy
+certifi
