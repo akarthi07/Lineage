@@ -1,0 +1,46 @@
+{
+  "id": "dark-plugg",
+  "name": "Dark Plugg",
+  "description": "An underground subgenre emerging from the intersection of Atlanta plugg production and gothic/dark aesthetics. Characterized by minor-key melodies, lo-fi 808s, and a deliberately cold, detached vocal style. Mostly anonymous producers and artists operating outside traditional label structures.",
+  "geography": ["Atlanta, GA", "New York, NY", "Internet-native"],
+  "timeline": {
+    "emerged": 2019,
+    "peak_underground": 2021,
+    "current_status": "expanding"
+  },
+  "lineage_roots": [
+    { "name": "Plugg", "description": "Parent genre — Atlanta production style with melodic 808s" },
+    { "name": "SoundCloud Rap", "description": "Distribution method and aesthetic DNA" },
+    { "name": "Rage", "description": "Shared energy and distorted production palette" }
+  ],
+  "key_artists": [
+    {
+      "name": "osamason",
+      "role": "Central figure",
+      "lastfm_listeners": 427129,
+      "underground_score": 0.3,
+      "tags": ["dark plugg", "plugg", "trap", "rage"]
+    },
+    {
+      "name": "Summrs",
+      "role": "Scene architect",
+      "lastfm_listeners": 180000,
+      "underground_score": 0.5,
+      "tags": ["dark plugg", "plugg", "rap"]
+    },
+    {
+      "name": "Izaya Tiji",
+      "role": "Underground core",
+      "lastfm_listeners": 85000,
+      "underground_score": 0.7,
+      "tags": ["dark plugg", "underground rap"]
+    }
+  ],
+  "sound_characteristics": [
+    "Minor key melodies",
+    "Lo-fi 808 bass",
+    "Cold, detached vocals",
+    "Sparse percussion",
+    "Gothic atmosphere"
+  ]
+}
