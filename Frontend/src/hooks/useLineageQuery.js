@@ -1,6 +1,8 @@
 import { useState, useCallback } from "react";
 import { mockRadioheadLineage } from "../data/mockRadiohead";
 import { mockUndergroundLineage } from "../data/mockUnderground";
+import { mockBladeeLineage } from "../data/mockBladee";
+import { mockKenCarsonLineage } from "../data/mockKenCarson";
 
 const USE_MOCK = true; // flip to false when backend is running
 
@@ -22,6 +24,10 @@ export function useLineageQuery() {
       const lower = artistName.toLowerCase();
       if (lower.includes("radiohead") || lower.includes("joy") || lower.includes("talk talk")) {
         setData(mockRadioheadLineage);
+      } else if (lower.includes("bladee") || lower.includes("drain") || lower.includes("ecco") || lower.includes("yung lean")) {
+        setData(mockBladeeLineage);
+      } else if (lower.includes("ken carson") || lower.includes("carti") || lower.includes("opium") || lower.includes("destroy lonely")) {
+        setData(mockKenCarsonLineage);
       } else {
         setData(mockUndergroundLineage);
       }

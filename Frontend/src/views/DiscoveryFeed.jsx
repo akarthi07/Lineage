@@ -4,14 +4,17 @@ import UndergroundBadge from "../components/shared/UndergroundBadge";
 import GenreTag from "../components/shared/GenreTag";
 import { mockRadioheadLineage } from "../data/mockRadiohead";
 import { mockUndergroundLineage } from "../data/mockUnderground";
+import { mockBladeeLineage } from "../data/mockBladee";
+import { mockKenCarsonLineage } from "../data/mockKenCarson";
 import { mockGenesis } from "../data/mockGenesis";
 
 const EXAMPLE_QUERIES = [
   "What influenced Radiohead?",
   "Trace the roots of osamason",
-  "Show me Joy Division's lineage",
+  "Show me Bladee's lineage",
   "What came before Talk Talk?",
-  "Find who shaped Portishead",
+  "Trace the Opium label sound",
+  "Who shaped Ken Carson?",
 ];
 
 function FeaturedLineageCard({ data, onClick, delay = 0 }) {
@@ -171,6 +174,16 @@ export default function DiscoveryFeed({ onSearch, loading }) {
             data={mockUndergroundLineage}
             onClick={() => handleSearch("osamason")}
             delay={60}
+          />
+          <FeaturedLineageCard
+            data={mockBladeeLineage}
+            onClick={() => handleSearch("Bladee")}
+            delay={120}
+          />
+          <FeaturedLineageCard
+            data={mockKenCarsonLineage}
+            onClick={() => handleSearch("Ken Carson")}
+            delay={180}
           />
         </div>
       </div>
