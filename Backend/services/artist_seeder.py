@@ -38,7 +38,6 @@ def seed_artist_network(artist_name: str, depth: int = 2) -> Optional[Artist]:
         return None
 
     id_type = "real MBID" if not root.mbid.startswith(("spotify:", "lastfm:")) else f"synthetic ({root.mbid.split(':')[0]})"
-    gm.ensure_indexes()
     gm.upsert_artist(root)
     print(f"[Seeder] Stored root artist: {root.name} ({id_type}: {root.mbid})")
 
@@ -64,7 +63,7 @@ def _seed_connections(
     mb_name_to_type: dict[str, str] = {}
     for rel in mb_rels:
         rel_type = rel.get("type", "").lower()
-        target = rel.get("artist", {})
+        target = rel.get("artist") or {}
         target_name = target.get("name", "")
         if target_name and rel_type:
             mb_name_to_type[target_name] = rel.get("type", "")

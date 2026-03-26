@@ -1,11 +1,14 @@
 """Neo4j graph manager — stores and queries the artist lineage graph."""
 from __future__ import annotations
+import logging
 import os
 from datetime import datetime, timezone
 from typing import Optional
 
 from neo4j import GraphDatabase, Driver
 from models.artist import Artist, ArtistNode, Edge, LineageResult
+
+logger = logging.getLogger(__name__)
 
 
 _driver: Optional[Driver] = None
@@ -243,7 +246,7 @@ def get_lineage(
     nodes = list(nodes_map.values())
     underground_count = sum(1 for n in nodes if n.underground_score > 0.4)
 
-    return LineageResult(
+    lineage = LineageResult(
         nodes=nodes,
         edges=edges_list,
         metadata={
@@ -254,8 +257,104 @@ def get_lineage(
         },
     )
 
+    # Enrich with matrix-suggested connections
+    _enrich_with_matrix_suggestions(lineage, nodes_map, edges_set)
 
-def _node_to_artist(node) -> Artist:
+    return lineage
+
+
+def _enrich_with_matrix_suggestions(
+    lineage: LineageResult,
+    nodes_map: dict[str, ArtistNode],
+    existing_edges: set[tuple],
+    suggestions_per_node: int = 3,
+) -> None:
+    """
+    For each node in the lineage, find top matrix-similar artists that are NOT
+    already in the graph result. Adds them as 'suggested connection' edges
+    with source_type='matrix_similarity'.
+    """
+    from ml.similarity_engine import get_engine
+
+    engine = get_engine()
+    if engine is None or not lineage.nodes:
+        return
+
+    # Collect MBIDs already in the result
+    existing_mbids = set(nodes_map.keys())
+
+    added_nodes = 0
+    added_edges = 0
+    max_suggestions = 9  # cap total suggestions to avoid clutter
+
+    for node in list(lineage.nodes):
+        if added_nodes >= max_suggestions:
+            break
+        if not engine.has_artist(node.id):
+            continue
+
+        similar = engine.get_most_similar(node.id, top_n=suggestions_per_node + 5)
+
+        count = 0
+        for other_mbid, score in similar:
+            if count >= suggestions_per_node or added_nodes >= max_suggestions:
+                break
+            # Skip if already in the graph result (as node or edge)
+            if other_mbid in existing_mbids:
+                continue
+            edge_key = (node.id, other_mbid)
+            reverse_key = (other_mbid, node.id)
+            if edge_key in existing_edges or reverse_key in existing_edges:
+                continue
+            # Only suggest if score is meaningful
+            if score < 0.15:
+                continue
+
+            # Fetch the suggested artist from Neo4j
+            artist = get_artist(other_mbid)
+            if not artist:
+                continue
+
+            # Add as a new node
+            suggested_node = ArtistNode(
+                id=other_mbid,
+                name=artist.name,
+                mbid=artist.mbid,
+                spotify_id=artist.spotify_id,
+                lastfm_listeners=artist.lastfm_listeners,
+                spotify_popularity=artist.spotify_popularity,
+                underground_score=artist.underground_score,
+                genres=artist.genres,
+                tags=artist.tags,
+                formation_year=artist.formation_year,
+                country=artist.country,
+                image_url=artist.image_url,
+                depth_level=(node.depth_level or 0) + 1,
+            )
+            lineage.nodes.append(suggested_node)
+            existing_mbids.add(other_mbid)
+            added_nodes += 1
+
+            # Add the suggested edge
+            lineage.edges.append(Edge(
+                source=node.id,
+                target=other_mbid,
+                strength=round(min(score, 1.0), 3),
+                source_type="matrix_similarity",
+                confidence=round(min(score, 1.0), 3),
+            ))
+            existing_edges.add(edge_key)
+            added_edges += 1
+            count += 1
+
+    if added_nodes > 0:
+        lineage.metadata["matrix_suggestions"] = added_nodes
+        if "matrix" not in lineage.metadata.get("data_sources_used", []):
+            lineage.metadata["data_sources_used"].append("matrix")
+        logger.info(f"Added {added_nodes} matrix-suggested nodes, {added_edges} edges")
+
+
+
     return Artist(
         mbid=node.get("mbid") or None,
         spotify_id=node.get("spotify_id") or None,

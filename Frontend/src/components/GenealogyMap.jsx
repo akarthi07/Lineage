@@ -21,6 +21,7 @@ const TEXT_MUTED    = "#4B4F63";
 const COL_PURPLE    = "#7C5CFC";
 const COL_TEAL      = "#3AAFB9";
 const COL_GREEN     = "#10B981";
+const COL_AMBER     = "#F59E0B";
 
 // underground_score 0 → purple (mainstream), 1 → green (deep underground)
 const colorScale = d3
@@ -42,15 +43,17 @@ function nodeColor(score) {
 }
 
 function edgeColor(sourceType) {
-  if (sourceType === "musicbrainz")    return COL_PURPLE;
-  if (sourceType === "lastfm_similar") return COL_TEAL;
+  if (sourceType === "musicbrainz")       return COL_PURPLE;
+  if (sourceType === "lastfm_similar")    return COL_TEAL;
+  if (sourceType === "matrix_similarity") return COL_AMBER;
   return "#4B5069";
 }
 
 function edgeDash(sourceType) {
-  if (sourceType === "musicbrainz")    return null;    // solid
-  if (sourceType === "lastfm_similar") return "8,5";   // dashed
-  return "3,6";                                        // dotted
+  if (sourceType === "musicbrainz")       return null;    // solid
+  if (sourceType === "lastfm_similar")    return "8,5";   // dashed
+  if (sourceType === "matrix_similarity") return "5,3,2,3"; // dash-dot
+  return "3,6";                                           // dotted
 }
 
 function edgeRelationLabel(edge) {
@@ -59,6 +62,7 @@ function edgeRelationLabel(edge) {
     edge.musicbrainz_type === "influenced by"
   ) return "influenced by";
   if (edge.source_type === "musicbrainz") return "connected";
+  if (edge.source_type === "matrix_similarity") return "suggested connection";
   return "from the same scene";
 }
 
@@ -167,9 +171,10 @@ export default function GenealogyMap({
 
     // Arrow markers
     [
-      { id: "arrow-mb",  color: COL_PURPLE },
-      { id: "arrow-lfm", color: COL_TEAL   },
-      { id: "arrow-tag", color: "#4B5069"   },
+      { id: "arrow-mb",     color: COL_PURPLE },
+      { id: "arrow-lfm",    color: COL_TEAL   },
+      { id: "arrow-matrix", color: COL_AMBER  },
+      { id: "arrow-tag",    color: "#4B5069"   },
     ].forEach(({ id, color }) => {
       defs.append("marker")
         .attr("id", id)
@@ -251,8 +256,9 @@ export default function GenealogyMap({
           .attr("stroke-width",    (e) => Math.max(0.8, (e.strength ?? 0.5) * 2.8))
           .attr("stroke-opacity",  (e) => 0.28 + (e.confidence ?? 0.5) * 0.45)
           .attr("marker-end",      (e) => {
-            if (e.source_type === "musicbrainz")    return "url(#arrow-mb)";
-            if (e.source_type === "lastfm_similar") return "url(#arrow-lfm)";
+            if (e.source_type === "musicbrainz")       return "url(#arrow-mb)";
+            if (e.source_type === "lastfm_similar")    return "url(#arrow-lfm)";
+            if (e.source_type === "matrix_similarity") return "url(#arrow-matrix)";
             return "url(#arrow-tag)";
           });
 
@@ -270,7 +276,9 @@ export default function GenealogyMap({
                 <p class="tt-sub">${Math.round((e.strength ?? 0) * 100)}% strength
                   &nbsp;·&nbsp; ${Math.round((e.confidence ?? 0) * 100)}% confidence</p>
                 <p class="tt-source" style="color:${edgeColor(e.source_type)}">
-                  ${e.source_type === "musicbrainz" ? "Documented · MusicBrainz" : "Last.fm listener data"}
+                  ${e.source_type === "musicbrainz" ? "Documented · MusicBrainz"
+                    : e.source_type === "matrix_similarity" ? "Suggested · Similarity Matrix"
+                    : "Last.fm listener data"}
                 </p>
               </div>`,
               mx, my

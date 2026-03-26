@@ -44,7 +44,7 @@ PROGRESS_FILE = ROOT / "data" / "seed_progress.json"
 LOG_FILE      = ROOT / "data" / "seed_run.log"
 
 # ── Tuning ────────────────────────────────────────────────────────────────────
-SEED_DEPTH              = 2      # API hops per artist (depth 2 = direct + one level below)
+SEED_DEPTH              = 2      # hard cap — depth 3 on well-connected artists takes hours
 BETWEEN_ARTISTS_DELAY   = 3.0   # seconds — gives MB rate limiter breathing room
 BETWEEN_EDGE_INJECTS    = 0.4   # seconds — between API calls inside inject_known_edges
 MIN_EDGE_STRENGTH       = 0.30  # skip injecting edges below this threshold
@@ -116,8 +116,8 @@ def inject_known_edges(root_mbid: str, root_name: str, known_influences: list) -
             continue
 
         try:
-            # Resolve the influence — checks Redis cache first, then APIs
-            influence = resolve_artist(influence_name)
+            # Resolve via Last.fm only — MB SSL is broken, Spotify is rate-limited
+            influence = resolve_artist(influence_name, skip_mb=True, skip_spotify=True)
             if not influence or not influence.mbid:
                 log.warning(f"    [inject] could not resolve {influence_name!r} — skipping")
                 skipped += 1
@@ -159,40 +159,33 @@ def seed_one(artist_data: dict) -> bool:
     name    = artist_data["name"]
     tier    = artist_data.get("tier", "?")
     genre   = artist_data.get("genre_group", "?")
-    depth   = artist_data.get("seed_depth", SEED_DEPTH)
+    depth   = min(artist_data.get("seed_depth", SEED_DEPTH), SEED_DEPTH)  # never exceed cap
     edges   = artist_data.get("known_influences", [])
 
     log.info(f"  Tier: {tier}  |  Genre: {genre}  |  Seed depth: {depth}")
 
-    # ── Step 1: API-driven discovery ──────────────────────────────────────────
+    # ── Resolve root artist (Last.fm + Spotify only — MB skipped) ────────────
+    # API-driven graph crawl is skipped: MusicBrainz bulk-request SSL failures
+    # make it unusable for seeding. Curated edges in seed_lineages.json are the
+    # primary data source. Users trigger fresh discovery on-demand via queries.
     root = None
     try:
-        root = seed_artist_network(name, depth=depth)
-        if root:
-            log.info(f"  ✓ API seed complete — MBID: {root.mbid}")
+        root = resolve_artist(name, skip_mb=True, skip_spotify=True)
+        if root and root.mbid:
+            gm.ensure_indexes()
+            gm.upsert_artist(root)
+            log.info(f"  ✓ Resolved — MBID: {root.mbid}")
         else:
-            log.warning(f"  ⚠ API seed returned nothing for {name!r}")
+            log.warning(f"  ⚠ Could not resolve {name!r} from any source")
     except Exception as exc:
-        log.error(f"  ✗ API seed crashed for {name!r}: {exc}")
+        log.error(f"  ✗ Resolve failed for {name!r}: {exc}")
 
-    # ── Step 2: Curated edge injection ───────────────────────────────────────
+    # ── Inject curated edges ──────────────────────────────────────────────────
     if not edges:
         log.info("  — no curated edges for this artist")
         return root is not None
 
-    # We need the root MBID to create outbound edges.
-    # If seeding succeeded, use the returned object.
-    # If not, try to look it up from the graph, then fall back to resolve.
     root_mbid = root.mbid if root else None
-
-    if not root_mbid:
-        # Attempt to find the artist that was just seeded (or already existed)
-        try:
-            resolved = resolve_artist(name)
-            root_mbid = resolved.mbid if resolved else None
-        except Exception as exc:
-            log.error(f"  Fallback resolve failed for {name!r}: {exc}")
-
     if not root_mbid:
         log.error(f"  Cannot inject curated edges — no MBID for {name!r}")
         return False
@@ -200,7 +193,7 @@ def seed_one(artist_data: dict) -> bool:
     injected = inject_known_edges(root_mbid, name, edges)
     log.info(f"  ✓ Injected {injected}/{len(edges)} curated edges")
 
-    return True  # partial success still counts as done
+    return True
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────

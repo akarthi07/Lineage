@@ -14,8 +14,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from config import settings
-from routers import query, artists, genesis, search
+from routers import query, artists, genesis, search, similarity
 from services import graph_manager as gm
+from ml.similarity_engine import load_engine as load_similarity_engine
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -39,6 +40,14 @@ async def lifespan(app: FastAPI):
         logger.info("Neo4j indexes OK")
     except Exception as exc:
         logger.warning(f"Neo4j not reachable at startup: {exc}")
+
+    # Load similarity matrix (gracefully degrades if not yet computed)
+    engine = load_similarity_engine()
+    if engine:
+        logger.info(f"Similarity matrix loaded: {engine.n} artists")
+    else:
+        logger.info("Similarity matrix not found — matrix search disabled")
+
     yield
     logger.info("Shutting down — closing Neo4j driver")
     gm.close_driver()
@@ -93,7 +102,8 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
 app.include_router(query.router,   prefix="/api/query",   tags=["Query"])
 app.include_router(artists.router, prefix="/api/artist",  tags=["Artists"])
 app.include_router(genesis.router, prefix="/api/genesis", tags=["Genesis"])
-app.include_router(search.router,  prefix="/api/search",  tags=["Search"])
+app.include_router(search.router,     prefix="/api/search",     tags=["Search"])
+app.include_router(similarity.router, prefix="/api/similarity", tags=["Similarity"])
 
 
 # ---------------------------------------------------------------------------

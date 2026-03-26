@@ -20,29 +20,38 @@ def _parse_year(year_str: Optional[str]) -> Optional[int]:
         return None
 
 
-def resolve_artist(name: str) -> Optional[Artist]:
+def resolve_artist(
+    name: str,
+    skip_mb: bool = False,
+    skip_spotify: bool = False,
+) -> Optional[Artist]:
     """
     Resolve an artist name across MusicBrainz, Last.fm, and Spotify.
     Returns a unified Artist object, or None if not found anywhere.
+
+    skip_mb      — skip MusicBrainz lookup (use when MB is rate-limited or SSL-broken)
+    skip_spotify — skip Spotify lookup (use when Spotify is rate-limited)
     """
     mb_data: Optional[dict] = None
     lastfm_data: Optional[dict] = None
     spotify_data: Optional[dict] = None
 
     # --- MusicBrainz ---
-    mb_result = mb.search_artist(name)
-    if mb_result:
-        mbid = mb_result.get("id")
-        if mbid:
-            mb_data = mb.get_artist(mbid) or mb_result
-        else:
-            mb_data = mb_result
+    if not skip_mb:
+        mb_result = mb.search_artist(name)
+        if mb_result:
+            mbid = mb_result.get("id")
+            if mbid:
+                mb_data = mb.get_artist(mbid) or mb_result
+            else:
+                mb_data = mb_result
 
     # --- Last.fm ---
     lastfm_data = lastfm.get_artist_info(name)
 
     # --- Spotify ---
-    spotify_data = spotify.search_artist(name)
+    if not skip_spotify:
+        spotify_data = spotify.search_artist(name)
 
     # Need at least one source
     if not mb_data and not lastfm_data and not spotify_data:

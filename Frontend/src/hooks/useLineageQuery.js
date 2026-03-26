@@ -4,7 +4,7 @@ import { mockUndergroundLineage } from "../data/mockUnderground";
 import { mockBladeeLineage } from "../data/mockBladee";
 import { mockKenCarsonLineage } from "../data/mockKenCarson";
 
-const USE_MOCK = true; // flip to false when backend is running
+const USE_MOCK = false; // flip to false when backend is running
 
 export function useLineageQuery() {
   const [data, setData] = useState(null);

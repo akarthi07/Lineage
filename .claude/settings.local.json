@@ -2,7 +2,35 @@
   "permissions": {
     "allow": [
       "Bash(source:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(node:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm run:*)",
+      "Bash(cd C:\\\\Adhithya\\\\Lineage\\\\Backend && source venv/Scripts/activate && python -c \"\nfrom services.prompts import QUERY_PARSE_SYSTEM, DISCOVERY_SYSTEM, CLARIFICATION_SYSTEM\nprint\\('prompts.py OK'\\)\n\nfrom services.nlp_client import parse_query, resolve_discovery, parse_clarification\nprint\\('nlp_client.py OK'\\)\n\nfrom routers.query import router as query_router\nprint\\('routers/query.py OK'\\)\n\nfrom routers.search import router as search_router\nprint\\('routers/search.py OK'\\)\n\nprint\\('All imports passed.'\\)\n\")",
+      "Read(//c/Adhithya/Lineage/Backend/**)",
+      "Bash(python -c \":*)",
+      "Bash(source venv/Scripts/activate && python scripts/test_nlp.py 2>&1)",
+      "Bash(source venv/Scripts/activate && python -c \"\nfrom dotenv import load_dotenv\nload_dotenv\\(\\)\nimport anthropic, os\nclient = anthropic.Anthropic\\(api_key=os.getenv\\('ANTHROPIC_API_KEY'\\)\\)\nresp = client.messages.create\\(\n    model='claude-sonnet-4-20250514',\n    max_tokens=50,\n    messages=[{'role': 'user', 'content': 'Say hi'}]\n\\)\nprint\\(resp.content[0].text\\)\n\" 2>&1)",
+      "Bash(docker ps:*)",
+      "Bash(docker compose:*)",
+      "Bash(cd /c/Adhithya/Lineage/Backend && source venv/Scripts/activate && python -c \"\nimport redis\nr = redis.Redis\\(host='localhost', port=6379, db=0\\)\nr.ping\\(\\)\nkeys = r.keys\\('*'\\)\nprint\\(f'Redis is up. Cached keys: {len\\(keys\\)}'\\)\nfrom collections import Counter\nif keys:\n    prefixes = [k.decode\\(\\).split\\(':'\\)[0] for k in keys[:200]]\n    for p, c in Counter\\(prefixes\\).most_common\\(10\\):\n        print\\(f'  {p}: {c}'\\)\n\" 2>&1)",
+      "Bash(source venv/Scripts/activate && curl -s http://localhost:8000/docs 2>&1 | head -c 100)",
+      "Bash(curl -s http://localhost:8000/ 2>&1; curl -s http://localhost:3000/ 2>&1 | head -c 200)",
+      "Bash(source venv/Scripts/activate && uvicorn main:app --host 0.0.0.0 --port 8000 --reload 2>&1)",
+      "Bash(sleep 5 && curl -s http://localhost:8000/ 2>&1 | head -c 200)",
+      "Bash(sleep 5 && curl -s http://localhost:5173/ 2>&1 | head -c 200)",
+      "Bash(source venv/Scripts/activate && curl -s \"http://localhost:8000/api/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711/lineage\" 2>&1 | python -c \"\nimport json, sys\ndata = json.load\\(sys.stdin\\)\nprint\\(f'Nodes: {len\\(data.get\\(\\\\\"nodes\\\\\", []\\)\\)}'\\)\nprint\\(f'Edges: {len\\(data.get\\(\\\\\"edges\\\\\", []\\)\\)}'\\)\nif data.get\\('nodes'\\):\n    print\\(f'Root: {data[\\\\\"nodes\\\\\"][0][\\\\\"name\\\\\"]}'\\)\n\" 2>&1)",
+      "Bash(source venv/Scripts/activate && python -c \"\nimport redis\nr = redis.Redis\\(host='localhost', port=6379, db=0\\)\nkeys = r.keys\\('*'\\)\nprint\\(f'Redis cached keys: {len\\(keys\\)}'\\)\n\" 2>&1)",
+      "Bash(cd C:/Adhithya/Lineage/Backend && source venv/Scripts/activate && python ml/tests/test_matrices.py)",
+      "Bash(cd C:/Adhithya/Lineage/Backend && source venv/Scripts/activate && sleep 5 && python ml/tests/test_matrices.py)",
+      "Bash(netstat -ano | grep -E \":\\(8000|5173|3000\\) \" | head -10)",
+      "Bash(cd C:/Adhithya/Lineage/Backend && source venv/Scripts/activate && uvicorn main:app --host 0.0.0.0 --port 8000 --reload)",
+      "Bash(cd:*)",
+      "Read(//c/Adhithya/Lineage/**)",
+      "Bash(docker-compose up:*)",
+      "Bash(git add:*)"
     ]
   }
 }
