@@ -1,0 +1,2915 @@
+{
+  "detected_at": "2026-04-03T00:03:23.235809+00:00",
+  "parameters": {
+    "eps": 0.3,
+    "min_samples": 4
+  },
+  "total_clusters": 6,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "size": 11,
+      "avg_year": 1985.0,
+      "avg_underground": 0.586,
+      "top_tags": [
+        "ambient",
+        "Soundtrack",
+        "dark ambient",
+        "electronic",
+        "video game music",
+        "experimental",
+        "industrial",
+        "drone",
+        "instrumental",
+        "score"
+      ],
+      "top_genres": [],
+      "geography": [
+        "Los Angeles"
+      ],
+      "cohesion_score": 0.973,
+      "description": "This cluster represents a convergence of sound designers and composers who blur the lines between traditional film scoring, video game audio, and dark ambient music, creating immersive sonic environments that prioritize psychological atmosphere over melodic structure. These artists, primarily based in Los Angeles's media production ecosystem, employ industrial textures, drone elements, and experimental electronic techniques to craft what might be called \"narrative ambience\" \u2013 soundscapes designed to serve story and mood rather than standalone listening. While rooted in the practical demands of multimedia scoring, their work pushes beyond conventional soundtrack boundaries into territories typically occupied by dark ambient and drone artists like Tim Hecker or Ben Frost. The scene reflects how the entertainment industry's need for increasingly sophisticated audio design has created a new breed of composer-sound artists who treat diegetic and non-diegetic sound as equally malleable creative materials.",
+      "lineage_roots": [],
+      "artists": [
+        {
+          "mbid": "46ac828f-1765-445d-bb91-a10fd7291dd7",
+          "name": "Brian Reitzell",
+          "underground_score": 0.5,
+          "tags": [
+            "Soundtrack",
+            "ambient",
+            "experimental",
+            "dark ambient",
+            "drone"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 86493
+        },
+        {
+          "mbid": "0b07b7bf-cd7a-43a3-be6d-3a5d892ca3b0",
+          "name": "Bobby Krlic",
+          "underground_score": 0.5,
+          "tags": [
+            "ambient",
+            "Soundtrack",
+            "drone",
+            "electronic",
+            "score"
+          ],
+          "formation_year": 1985,
+          "country": "Los Angeles",
+          "lastfm_listeners": 83047
+        },
+        {
+          "mbid": "lastfm:david_lynch_&_alan_r._splet",
+          "name": "David Lynch & Alan R. Splet",
+          "underground_score": 0.85,
+          "tags": [
+            "dark ambient",
+            "Soundtrack",
+            "ambient",
+            "noise",
+            "experimental"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 9177
+        },
+        {
+          "mbid": "1fefa8b3-806b-4ab9-a066-66574b22aa16",
+          "name": "Atticus Ross",
+          "underground_score": 0.5,
+          "tags": [
+            "ambient",
+            "Soundtrack",
+            "dark ambient",
+            "instrumental",
+            "industrial"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 79846
+        },
+        {
+          "mbid": "lastfm:aperture_science_psychoacoustics_laboratory",
+          "name": "Aperture Science Psychoacoustics Laboratory",
+          "underground_score": 0.5,
+          "tags": [
+            "Soundtrack",
+            "electronic",
+            "ambient",
+            "experimental",
+            "video game music"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 52143
+        },
+        {
+          "mbid": "444d38de-3739-4750-8687-aebbc80d884b",
+          "name": "Mark Korven",
+          "underground_score": 0.5,
+          "tags": [
+            "Soundtrack",
+            "ambient",
+            "dark ambient",
+            "electronic",
+            "industrial"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 53921
+        },
+        {
+          "mbid": "3e2d137e-23e7-4f1e-ae8b-643009a41b96",
+          "name": "Martin Stig Andersen",
+          "underground_score": 0.5,
+          "tags": [
+            "ambient",
+            "dark ambient",
+            "Soundtrack",
+            "electronic",
+            "video game music"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 65255
+        },
+        {
+          "mbid": "a1d3685a-c61d-49aa-a294-bcfc25e516b5",
+          "name": "Mark Snow",
+          "underground_score": 0.5,
+          "tags": [
+            "Soundtrack",
+            "ambient",
+            "instrumental",
+            "electronic",
+            "x-files"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 91731
+        },
+        {
+          "mbid": "4c8a43b8-1944-4f39-8046-ffa7e76db2af",
+          "name": "Kelly Bailey",
+          "underground_score": 0.7,
+          "tags": [
+            "ambient",
+            "Soundtrack",
+            "electronic",
+            "video game music",
+            "dark ambient"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 31493
+        },
+        {
+          "mbid": "8e07b39e-82b0-467e-8dec-60f744d34bd7",
+          "name": "Sascha Dikiciyan",
+          "underground_score": 0.7,
+          "tags": [
+            "ambient",
+            "industrial",
+            "electronic",
+            "electronica",
+            "game"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 39341
+        },
+        {
+          "mbid": "b496f74c-0218-406f-a8be-7cf9ccf10db3",
+          "name": "Alexey Omelchuk",
+          "underground_score": 0.7,
+          "tags": [
+            "dark ambient",
+            "ambient",
+            "Soundtrack",
+            "All",
+            "composer"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 48709
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "size": 4,
+      "avg_year": null,
+      "avg_underground": 0.688,
+      "top_tags": [
+        "Electroclash",
+        "hyperpop",
+        "experimental",
+        "insane",
+        "glitchcore",
+        "indietronica",
+        "electronic",
+        "australia",
+        "electrocrash"
+      ],
+      "top_genres": [],
+      "geography": [
+        "Detroit",
+        "AU"
+      ],
+      "cohesion_score": 0.971,
+      "description": "This tightly-knit cluster represents artists pushing electroclash and hyperpop into increasingly fractured, maximalist territory, united by their embrace of deliberate sonic chaos and glitched-out production techniques. While rooted in the rebellious spirit of early 2000s electroclash, they've absorbed hyperpop's sugar-rush intensity and stretched it through a distinctly indietronica lens that prioritizes experimentation over accessibility. The scene bridges Detroit's electronic heritage with Australia's experimental underground, creating music that feels simultaneously nostalgic for early digital aesthetics and aggressively futuristic. Their sound exists in the volatile space between dancefloor functionality and art-damaged deconstruction, too unhinged for mainstream EDM yet too beat-driven for pure noise experimentation.",
+      "lineage_roots": [],
+      "artists": [
+        {
+          "mbid": "55a9e5da-989a-4bb2-8612-4d5d20945aa0",
+          "name": "Tommy Fleece",
+          "underground_score": 0.5,
+          "tags": [
+            "hyperpop",
+            "Electroclash",
+            "experimental",
+            "insane",
+            "glitchcore"
+          ],
+          "formation_year": null,
+          "country": "Detroit",
+          "lastfm_listeners": 59356
+        },
+        {
+          "mbid": "spotify:6VTDiGVPXMi17JmRo1ewr5",
+          "name": "Silicone Valley",
+          "underground_score": 0.7,
+          "tags": [
+            "indietronica",
+            "Electroclash"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 31781
+        },
+        {
+          "mbid": "spotify:6P49zE9YQP3uNZDunypeBn",
+          "name": "80gawd",
+          "underground_score": 0.85,
+          "tags": [
+            "electronic",
+            "Electroclash"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 10010
+        },
+        {
+          "mbid": "e4179ae2-a1e6-4b29-af93-33a4aef83625",
+          "name": "Perto",
+          "underground_score": 0.7,
+          "tags": [
+            "Electroclash",
+            "australia",
+            "electrocrash"
+          ],
+          "formation_year": null,
+          "country": "AU",
+          "lastfm_listeners": 27970
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "size": 14,
+      "avg_year": null,
+      "avg_underground": 0.646,
+      "top_tags": [
+        "Gothic",
+        "ethereal",
+        "Gothic Rock",
+        "darkwave",
+        "goth",
+        "ambient",
+        "deathrock",
+        "shoegaze",
+        "electronic",
+        "dream pop"
+      ],
+      "top_genres": [],
+      "geography": [],
+      "cohesion_score": 0.766,
+      "description": "This cluster represents a twilight zone between gothic rock's dramatic darkness and ambient music's weightless atmospherics, where ethereal vocals float over shimmering, reverb-drenched soundscapes that prioritize mood over traditional song structure. The artists bridge the gap between Cocteau Twins' dream-pop innovations and the more ritualistic, cinematic aspects of darkwave, creating music that feels simultaneously ancient and futuristic. Rather than gothic rock's driving rhythms or ambient's complete formlessness, these acts occupy a liminal space where ghostly melodies emerge from layers of treated guitars, synthesizers, and often wordless vocalizations that suggest sacred or mystical themes. This internet-native scene has allowed collaborations between ambient pioneers like Harold Budd and gothic luminaries to flourish alongside lesser-known artists who share this vision of gothic music as transcendent rather than merely transgressive.",
+      "lineage_roots": [],
+      "artists": [
+        {
+          "mbid": "lastfm:harold_budd,_simon_raymonde,_robin_guthrie_&_elizabeth_fraser",
+          "name": "Harold Budd, Simon Raymonde, Robin Guthrie & Elizabeth Fraser",
+          "underground_score": 0.85,
+          "tags": [
+            "dream pop",
+            "ambient",
+            "ethereal",
+            "shoegaze",
+            "4ad"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 12581
+        },
+        {
+          "mbid": "f5e27565-2a94-4859-b328-c03b4735b41b",
+          "name": "The Shroud",
+          "underground_score": 0.7,
+          "tags": [
+            "Gothic Rock",
+            "darkwave",
+            "ethereal",
+            "Gothic",
+            "goth"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 44799
+        },
+        {
+          "mbid": "afeafb47-f113-4318-8234-69781dec9029",
+          "name": "Trance to the Sun",
+          "underground_score": 0.7,
+          "tags": [
+            "darkwave",
+            "ethereal",
+            "shoegaze",
+            "Gothic",
+            "goth"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 34318
+        },
+        {
+          "mbid": "lastfm:robin_guthrie_&_harold_budd",
+          "name": "Robin Guthrie & Harold Budd",
+          "underground_score": 0.7,
+          "tags": [
+            "ambient",
+            "ethereal",
+            "electronic",
+            "minimal",
+            "minimalism"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 35179
+        },
+        {
+          "mbid": "a4b15836-dab1-4b20-90c0-76e2a33ee55c",
+          "name": "Diva Destruction",
+          "underground_score": 0.5,
+          "tags": [
+            "darkwave",
+            "Gothic Rock",
+            "Gothic",
+            "electronic",
+            "goth"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 93150
+        },
+        {
+          "mbid": "lastfm:lisa_gerrard_&_pieter_bourke",
+          "name": "Lisa Gerrard & Pieter Bourke",
+          "underground_score": 0.7,
+          "tags": [
+            "ethereal",
+            "ambient",
+            "Gothic",
+            "female vocalists",
+            "world"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 41236
+        },
+        {
+          "mbid": "f0ab580c-1312-4021-a9c0-9b819acb6c7c",
+          "name": "This Ascension",
+          "underground_score": 0.7,
+          "tags": [
+            "ethereal",
+            "darkwave",
+            "Gothic Rock",
+            "Gothic",
+            "goth"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 33702
+        },
+        {
+          "mbid": "aad85c3e-48d8-43e9-876e-49bafba607b2",
+          "name": "Rose McDowall",
+          "underground_score": 0.5,
+          "tags": [
+            "neofolk",
+            "synthpop",
+            "new wave",
+            "pop",
+            "bubblegum pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 89042
+        },
+        {
+          "mbid": "7c0f4b42-f5b8-4538-b651-b199c16bb398",
+          "name": "Sanguis et Cinis",
+          "underground_score": 0.5,
+          "tags": [
+            "Gothic Rock",
+            "darkwave",
+            "Gothic",
+            "deathrock",
+            "german"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 52447
+        },
+        {
+          "mbid": "f0d04fd3-a224-41af-ab50-7074436d8dd1",
+          "name": "Plastique Noir",
+          "underground_score": 0.5,
+          "tags": [
+            "Gothic Rock",
+            "post-punk",
+            "darkwave",
+            "deathrock",
+            "brazilian"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 78518
+        },
+        {
+          "mbid": "9c615217-2827-46e0-b6a6-292eb232a950",
+          "name": "Rajna",
+          "underground_score": 0.5,
+          "tags": [
+            "ethereal",
+            "ethnic",
+            "darkwave",
+            "folk",
+            "dark ambient"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 69369
+        },
+        {
+          "mbid": "lastfm:eraldo_bernocchi,_harold_budd,_robin_guthrie",
+          "name": "Eraldo Bernocchi, Harold Budd, Robin Guthrie",
+          "underground_score": 1.0,
+          "tags": [
+            "ambient",
+            "instrumental",
+            "piano",
+            "drone",
+            "collaboration"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 3741
+        },
+        {
+          "mbid": "8f9ac7fb-5584-4f99-9feb-d50a24d77764",
+          "name": "Voodoo Church",
+          "underground_score": 0.5,
+          "tags": [
+            "deathrock",
+            "Gothic Rock",
+            "batcave",
+            "Gothic",
+            "goth"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 50279
+        },
+        {
+          "mbid": "8658f7d7-7c79-42f9-8131-8c545a59dc8f",
+          "name": "Witching Hour",
+          "underground_score": 0.7,
+          "tags": [
+            "Gothic Rock",
+            "thrash metal",
+            "black metal",
+            "blackened thrash metal",
+            "Gothic"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 33688
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "size": 6,
+      "avg_year": null,
+      "avg_underground": 0.6,
+      "top_tags": [
+        "plugg",
+        "cloud rap",
+        "experimental",
+        "ambient",
+        "nod",
+        "Hip-Hop",
+        "rap",
+        "dream pop",
+        "shoegaze",
+        "psychedelic"
+      ],
+      "top_genres": [],
+      "geography": [],
+      "cohesion_score": 0.73,
+      "description": "This cluster represents a convergent evolution happening at the intersection of heavily atmospheric hip-hop and ambient experimentalism, where artists are pushing plugg and cloud rap into increasingly ethereal, almost post-genre territory. What unifies these producers and rappers is their shared approach to texture over structure\u2014prioritizing dreamlike soundscapes, heavily processed vocals, and hypnotic repetition that blurs the line between beat-making and sound art. While rooted in hip-hop's digital underground, particularly the plugg scene's emphasis on spacious, reverb-drenched production, these artists are incorporating elements more commonly found in ambient music and experimental electronic composition. The scene exists primarily in internet spaces where genre boundaries are fluid, creating music that functions equally well as background atmosphere and focused listening, suggesting a new form of \"ambient rap\" that prioritizes mood and immersion over traditional song structures.",
+      "lineage_roots": [],
+      "artists": [
+        {
+          "mbid": "34c9cca1-1e7e-4123-b77b-dcbf57f6c4c2",
+          "name": "Sound of Ceres",
+          "underground_score": 0.5,
+          "tags": [
+            "dream pop",
+            "shoegaze",
+            "psychedelic",
+            "Neo-Psychedelia",
+            "experimental"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 53648
+        },
+        {
+          "mbid": "1a7dfcac-47ae-4110-99ca-631a2ba4a12e",
+          "name": "Marlon DuBois",
+          "underground_score": 0.5,
+          "tags": [
+            "ambient",
+            "nod",
+            "plugg",
+            "cloud rap",
+            "shed theory"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 72616
+        },
+        {
+          "mbid": "b9503776-04f8-467b-9ce9-62564adb780d",
+          "name": "Shed Theory",
+          "underground_score": 0.7,
+          "tags": [
+            "plugg",
+            "cloud rap",
+            "ambient",
+            "nod",
+            "hip hop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 47855
+        },
+        {
+          "mbid": "b1cc917a-ed30-48c1-ad8e-16f53f4b4115",
+          "name": "Im a Monster",
+          "underground_score": 0.7,
+          "tags": [
+            "cloud rap",
+            "rage",
+            "plugg",
+            "Hip-Hop",
+            "experimental hip hop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 39684
+        },
+        {
+          "mbid": "fba34d55-082f-4e78-a6c4-5927af5d6714",
+          "name": "Dougie B",
+          "underground_score": 0.7,
+          "tags": [
+            "new york",
+            "rap",
+            "drill",
+            "hiphop",
+            "underground hip hop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 48689
+        },
+        {
+          "mbid": "16610cf1-5ed5-4770-89b4-bf7e7aca7ebf",
+          "name": "Moor Mother",
+          "underground_score": 0.5,
+          "tags": [
+            "experimental",
+            "Hip-Hop",
+            "rap",
+            "noise",
+            "electronic"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 93221
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "size": 101,
+      "avg_year": 2007.6,
+      "avg_underground": 0.7,
+      "top_tags": [
+        "hyperpop",
+        "electronic",
+        "pop",
+        "digicore",
+        "bubblegum bass",
+        "electropop",
+        "pc music",
+        "trap",
+        "cloud rap",
+        "experimental"
+      ],
+      "top_genres": [],
+      "geography": [
+        "US",
+        "BS",
+        "CA",
+        "St. Louis",
+        "Portland"
+      ],
+      "cohesion_score": 0.594,
+      "description": "This cluster represents a cohort of artists operating in the liminal space between hyperpop's aggressive maximalism and a more introspective, bedroom-produced aesthetic that draws heavily from PC Music's synthetic pop sensibilities. While rooted in digicore's DIY ethos and bubblegum bass's candy-coated textures, these artists tend toward more emotionally vulnerable songwriting and lo-fi production techniques that soften hyperpop's typically harsh digital edges. The scene appears to be largely North American, centered around online communities where artists blend trap-influenced rhythms with heavily processed vocals and dreamy, nostalgic synthesizer work. Rather than pure genre exercises, these artists seem to be using hyperpop and PC Music as launching points for more personal, intimate electronic pop that maintains the experimental spirit while prioritizing mood and atmosphere over pure sonic assault.",
+      "lineage_roots": [],
+      "artists": [
+        {
+          "mbid": "bcbecaf4-c8cd-47ec-939d-e6967b4709b6",
+          "name": "moistbreezy",
+          "underground_score": 0.7,
+          "tags": [
+            "eurodance",
+            "pop",
+            "hyperpop",
+            "trance",
+            "electronic"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 21979
+        },
+        {
+          "mbid": "03176dec-730a-4fab-897f-54c92db743da",
+          "name": "Donatachi",
+          "underground_score": 0.5,
+          "tags": [
+            "pop",
+            "electronic",
+            "hyperpop",
+            "bubblegum pop",
+            "pc music"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 85376
+        },
+        {
+          "mbid": "20089295-4125-45c7-9dcb-9d166f3e2804",
+          "name": "gabby start",
+          "underground_score": 0.5,
+          "tags": [
+            "indie pop",
+            "hyperpop",
+            "indietronica",
+            "pop",
+            "electropop"
+          ],
+          "formation_year": 2001,
+          "country": "US",
+          "lastfm_listeners": 52390
+        },
+        {
+          "mbid": "a7343882-37c3-471c-ad35-9bb18cbcc8c8",
+          "name": "Life Sim",
+          "underground_score": 0.7,
+          "tags": [
+            "electronic",
+            "bubblegum bass",
+            "pc music",
+            "trance",
+            "pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 29899
+        },
+        {
+          "mbid": "spotify:7hVZCBzCfynvqYZ5iNnEjx",
+          "name": "Cookii",
+          "underground_score": 0.7,
+          "tags": [
+            "pop",
+            "electropop",
+            "cute",
+            "electronic",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 24182
+        },
+        {
+          "mbid": "3f5e16ee-9269-41ef-8fc3-c57bc81d047b",
+          "name": "six impala",
+          "underground_score": 0.5,
+          "tags": [
+            "electronic",
+            "experimental",
+            "hyperpop",
+            "bubblegum bass",
+            "Nightcore"
+          ],
+          "formation_year": 2017,
+          "country": "",
+          "lastfm_listeners": 77218
+        },
+        {
+          "mbid": "spotify:3ypTgZWVLSkBaTjFNjSDE8",
+          "name": "ultra caro",
+          "underground_score": 0.7,
+          "tags": [
+            "indietronica",
+            "ambient",
+            "synthpop",
+            "alt-pop",
+            "bubblegum bass"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 20076
+        },
+        {
+          "mbid": "5c4361d7-133d-4f63-9b6e-95dbdc281a49",
+          "name": "Astra King",
+          "underground_score": 0.7,
+          "tags": [
+            "electronic",
+            "electropop",
+            "hyperpop",
+            "pop",
+            "alt-pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 37462
+        },
+        {
+          "mbid": "lastfm:sayako",
+          "name": "sayako",
+          "underground_score": 0.5,
+          "tags": [
+            "cloud rap",
+            "plugg",
+            "hip house",
+            "german",
+            "digicore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 79650
+        },
+        {
+          "mbid": "spotify:2xNs2zfnh52ORUTI4Qfvxf",
+          "name": "Saoirse Dream",
+          "underground_score": 0.5,
+          "tags": [
+            "hyperpop",
+            "bitpop",
+            "United States",
+            "emo-pop",
+            "lgbt"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 60691
+        },
+        {
+          "mbid": "lastfm:jane_remover_&_kmoe",
+          "name": "Jane Remover & kmoe",
+          "underground_score": 1.0,
+          "tags": [
+            "Canadian",
+            "american",
+            "digicore",
+            "United States",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 2601
+        },
+        {
+          "mbid": "b1899d5f-3932-4ec8-ba55-6591cef49746",
+          "name": "Maple",
+          "underground_score": 0.5,
+          "tags": [
+            "hardcore",
+            "hyperpop",
+            "Nightcore",
+            "Hard Dance",
+            "footwork"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 67558
+        },
+        {
+          "mbid": "1bd5eb18-7ea3-4544-8bbb-ea7f1fcfc0a4",
+          "name": "webcage",
+          "underground_score": 0.5,
+          "tags": [
+            "hyperpop",
+            "rock",
+            "electronic",
+            "pop",
+            "UK"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 55271
+        },
+        {
+          "mbid": "e8367e77-8847-45e2-a52f-1cf55131eaed",
+          "name": "Thy Slaughter",
+          "underground_score": 0.5,
+          "tags": [
+            "bubblegum bass",
+            "electronic",
+            "pc music",
+            "pop",
+            "experimental"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 88666
+        },
+        {
+          "mbid": "d8489499-80c9-428f-9073-14d783d39717",
+          "name": "elxnce",
+          "underground_score": 0.7,
+          "tags": [
+            "electronic",
+            "chaos",
+            "hyperpop",
+            "jersey club",
+            "NOVAGANG"
+          ],
+          "formation_year": null,
+          "country": "BS",
+          "lastfm_listeners": 40696
+        },
+        {
+          "mbid": "cfb4ae4f-e281-43bb-a6d2-fcfff15e00db",
+          "name": "fraxiom",
+          "underground_score": 0.5,
+          "tags": [
+            "hyperpop",
+            "glitchcore",
+            "bubblegum bass",
+            "scenecore",
+            "Nightcore"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 93924
+        },
+        {
+          "mbid": "a95cc131-a3c2-4165-add6-30b0c69a5384",
+          "name": "zayok",
+          "underground_score": 0.85,
+          "tags": [
+            "alternative rnb",
+            "glitch pop",
+            "experimental hip hop",
+            "trap",
+            "digicore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 11656
+        },
+        {
+          "mbid": "5cb5b72a-2691-4753-9f35-989d2a6e1888",
+          "name": "Hyd",
+          "underground_score": 0.5,
+          "tags": [
+            "electropop",
+            "hyperpop",
+            "pop",
+            "electronic",
+            "synthpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 79482
+        },
+        {
+          "mbid": "1f09631e-5e0c-45f1-bd38-6909ecfdd794",
+          "name": "Petal Supply",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "electronic",
+            "canada",
+            "glitchcore",
+            "scenecore"
+          ],
+          "formation_year": null,
+          "country": "CA",
+          "lastfm_listeners": 36071
+        },
+        {
+          "mbid": "5706885b-7712-4be3-b809-db026e07d3a7",
+          "name": "Finn Keane",
+          "underground_score": 0.7,
+          "tags": [
+            "pop",
+            "alternative",
+            "pc music",
+            "UK",
+            "electropop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 41353
+        },
+        {
+          "mbid": "73469fec-1067-467d-a34f-4daf738cae51",
+          "name": "DJ Warlord",
+          "underground_score": 0.85,
+          "tags": [
+            "bubblegum bass",
+            "electronic",
+            "hypnagogic pop",
+            "United Kingdom",
+            "mediagaze"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 7868
+        },
+        {
+          "mbid": "8edb640b-a9dc-4db4-bb38-e8d60689909b",
+          "name": "Miss Madeline",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "soul",
+            "female vocalist",
+            "pop",
+            "electronic"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 46411
+        },
+        {
+          "mbid": "bd4e3dd2-ee69-40a5-bae2-c8e49b39e6d0",
+          "name": "CAKE POP",
+          "underground_score": 0.5,
+          "tags": [
+            "hyperpop",
+            "electronic",
+            "pop",
+            "dubstep",
+            "United States"
+          ],
+          "formation_year": 2015,
+          "country": "St. Louis",
+          "lastfm_listeners": 95911
+        },
+        {
+          "mbid": "4e40592a-3581-42f1-b6e8-ced9ac61376c",
+          "name": "tracey brakes",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "lgbt",
+            "indietronica",
+            "pop",
+            "dubstep"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 27157
+        },
+        {
+          "mbid": "7b01c842-0935-4fdf-a37e-d589370c0c29",
+          "name": "Lipgloss Twins",
+          "underground_score": 0.7,
+          "tags": [
+            "bubblegum bass",
+            "pc music",
+            "electronic",
+            "pop",
+            "2"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 25563
+        },
+        {
+          "mbid": "54812e06-b855-4870-a4b1-4ebcd770294d",
+          "name": "felicita",
+          "underground_score": 0.5,
+          "tags": [
+            "bubblegum bass",
+            "electronic",
+            "pc music",
+            "polish",
+            "ambient"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 72306
+        },
+        {
+          "mbid": "spotify:6YGu0Rv2120wkc4AXZSGgl",
+          "name": "Rustie",
+          "underground_score": 0.5,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": null
+        },
+        {
+          "mbid": "650cc3fe-095f-4851-a045-f9671eabf714",
+          "name": "PC Music",
+          "underground_score": 0.85,
+          "tags": [
+            "bubblegum bass",
+            "electronic",
+            "UK",
+            "dance-pop",
+            "uk bass"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 13000
+        },
+        {
+          "mbid": "b80b05a1-fd69-44ec-8b41-39f86a03d01b",
+          "name": "Gameboi",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "pop",
+            "electronic",
+            "alternative pop",
+            "ann arbor"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 23901
+        },
+        {
+          "mbid": "0ae56252-04a6-41cc-9590-189dc0eb9641",
+          "name": "Babymorocco",
+          "underground_score": 0.5,
+          "tags": [
+            "electronic",
+            "pop",
+            "Electroclash",
+            "electropop",
+            "synthpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 84695
+        },
+        {
+          "mbid": "spotify:4dRPlvbIv9Vy7QHD09lgDE",
+          "name": "dltzk",
+          "underground_score": 0.5,
+          "tags": [
+            "hyperpop",
+            "digicore",
+            "trap",
+            "indietronica",
+            "noise pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 69915
+        },
+        {
+          "mbid": "lastfm:kumosai",
+          "name": "kumosai",
+          "underground_score": 0.85,
+          "tags": [
+            "digicore",
+            "touhou",
+            "cloud rap",
+            "surge",
+            "sigilkore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 19385
+        },
+        {
+          "mbid": "af0c4afb-8717-4dad-b453-6b015c0d8bdc",
+          "name": "saoirse dream",
+          "underground_score": 0.5,
+          "tags": [
+            "hyperpop",
+            "bitpop",
+            "United States",
+            "emo-pop",
+            "lgbt"
+          ],
+          "formation_year": 2000,
+          "country": "Portland",
+          "lastfm_listeners": 60691
+        },
+        {
+          "mbid": "spotify:3343LAOpTvhsvoBqrm3S5f",
+          "name": "pobbles",
+          "underground_score": 0.85,
+          "tags": [
+            "vocaloid",
+            "bubblegum bass",
+            "pc music"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 12496
+        },
+        {
+          "mbid": "spotify:1u72ir1PY3DTq6QainBIJ3",
+          "name": "sister maple",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 1242
+        },
+        {
+          "mbid": "49a4b358-25a3-405b-ae1d-39ebdaf96213",
+          "name": "ovine hall",
+          "underground_score": 0.5,
+          "tags": [
+            "digicore",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 61633
+        },
+        {
+          "mbid": "10fc0568-790e-4615-a95e-7eb1b256a167",
+          "name": "DJ YUNG VAMP",
+          "underground_score": 0.7,
+          "tags": [
+            "phonk",
+            "electronic",
+            "trap",
+            "instrumental hip-hop",
+            "Hip-Hop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 36884
+        },
+        {
+          "mbid": "630bf93c-fc9e-4b8e-9f9e-770f01aac73c",
+          "name": "thatcherblackwood",
+          "underground_score": 0.85,
+          "tags": [
+            "singer-songwriter",
+            "art pop",
+            "glitch pop",
+            "folk",
+            "indie folk"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 14335
+        },
+        {
+          "mbid": "60739021-e6d2-45ca-b826-3d4c56d095f1",
+          "name": "Dux Content",
+          "underground_score": 1.0,
+          "tags": [
+            "bubblegum bass",
+            "pc music",
+            "electronic",
+            "dreampop",
+            "pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 4457
+        },
+        {
+          "mbid": "28292545-2aa6-4e5d-bd8b-0789dbb7dcb4",
+          "name": "heartstopmiami",
+          "underground_score": 0.85,
+          "tags": [
+            "venezuela",
+            "United States",
+            "digicore",
+            "Dominican",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 19211
+        },
+        {
+          "mbid": "66281e64-c672-450f-bb93-1403654c7fe5",
+          "name": "caro\u2661",
+          "underground_score": 0.5,
+          "tags": [
+            "electronic",
+            "synthpop",
+            "pc music",
+            "pop",
+            "ambient pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 64942
+        },
+        {
+          "mbid": "7b369410-e947-4c8f-9e93-d562d72874f3",
+          "name": "Xenomania",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 356
+        },
+        {
+          "mbid": "e58cf7eb-3164-437b-ad94-29839e880c3e",
+          "name": "TwerkNation28",
+          "underground_score": 0.85,
+          "tags": [
+            "jersey club",
+            "swag"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 5108
+        },
+        {
+          "mbid": "7a09e99a-5874-42f4-bdaa-2ecfa784dcaf",
+          "name": "Richie Souf",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 894
+        },
+        {
+          "mbid": "26b80d24-2011-4275-98b0-6a97836bdf20",
+          "name": "Junshi",
+          "underground_score": 0.7,
+          "tags": [
+            "elfaction",
+            "plugg",
+            "digicore",
+            "United Kingdom",
+            "surge"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 43401
+        },
+        {
+          "mbid": "11d11466-42ba-4ebf-b156-33856e0a0aeb",
+          "name": "Soza",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 1573
+        },
+        {
+          "mbid": "spotify:5Q2SPodgRF5DgI5Vs8y0Ve",
+          "name": "lostrushi",
+          "underground_score": 0.5,
+          "tags": [
+            "digicore",
+            "rap",
+            "Hip-Hop",
+            "indietronica",
+            "trap"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 71634
+        },
+        {
+          "mbid": "4dc7c9f7-2096-442f-a323-e1d3d7db257a",
+          "name": "Kyunchi",
+          "underground_score": 0.5,
+          "tags": [
+            "bubblegum bass",
+            "hyperpop",
+            "pc music",
+            "pop",
+            "russian"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 56815
+        },
+        {
+          "mbid": "e32cdd35-936e-4eb3-910b-7805e4d5bfc1",
+          "name": "Mel 4Ever",
+          "underground_score": 0.7,
+          "tags": [
+            "pop",
+            "hyperpop",
+            "electronic",
+            "dance",
+            "Alabama"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 46311
+        },
+        {
+          "mbid": "6c9832e6-380d-45c5-a716-2354e89c2e35",
+          "name": "datealyfe",
+          "underground_score": 0.7,
+          "tags": [
+            "United States",
+            "cloud rap",
+            "elfaction",
+            "pluggnb",
+            "frontline girls"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 39728
+        },
+        {
+          "mbid": "34073b7e-439b-4ff0-a104-79459b7f153c",
+          "name": "7Nightz #cc",
+          "underground_score": 0.7,
+          "tags": [
+            "elfaction",
+            "cloud rap",
+            "poetry",
+            "art pop",
+            "sigilkore"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 23234
+        },
+        {
+          "mbid": "1e8debd8-53cb-4a5e-bea1-a35adfae82c6",
+          "name": "Glitch Gum",
+          "underground_score": 0.7,
+          "tags": [
+            "USA",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 39104
+        },
+        {
+          "mbid": "d92d6c40-ac9d-4d6e-9f6f-7fc91fd985bf",
+          "name": "Ravenna Golden",
+          "underground_score": 0.5,
+          "tags": [
+            "electropop",
+            "ambient pop",
+            "trap",
+            "pop rap",
+            "rutracker"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 72688
+        },
+        {
+          "mbid": "ce6a32ee-197d-4a59-9dad-37eb21b45c30",
+          "name": "bleood",
+          "underground_score": 0.5,
+          "tags": [
+            "rage",
+            "rap",
+            "experimental",
+            "digicore",
+            "back"
+          ],
+          "formation_year": 2005,
+          "country": "New York",
+          "lastfm_listeners": 71883
+        },
+        {
+          "mbid": "spotify:68fiKpJLoB94P1fLMZTZbC",
+          "name": "yawning portal",
+          "underground_score": 0.5,
+          "tags": [
+            "ambient",
+            "ambient pop",
+            "Progressive Electronic",
+            "ambient trance",
+            "new age"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 57687
+        },
+        {
+          "mbid": "490d4ea0-db6e-4fd2-9184-1fe713f26fe0",
+          "name": "Bby Eco",
+          "underground_score": 0.5,
+          "tags": [
+            "ambient",
+            "pop",
+            "electronic",
+            "electropop",
+            "synthpop"
+          ],
+          "formation_year": null,
+          "country": "NL",
+          "lastfm_listeners": 78594
+        },
+        {
+          "mbid": "da92e28c-d5af-403c-9ba9-017a25e841c0",
+          "name": "TDJ",
+          "underground_score": 0.5,
+          "tags": [
+            "trance",
+            "techno",
+            "eurodance",
+            "electro",
+            "Gabber"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 83668
+        },
+        {
+          "mbid": "spotify:2tjDBUi44p9i0zsZQW01o4",
+          "name": "Estelle Allen",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "indie rock",
+            "digicore",
+            "stoner",
+            "lgbt"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 42805
+        },
+        {
+          "mbid": "84f13ef0-763c-4356-af81-c643dd0e94d0",
+          "name": "RYL0",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "pop",
+            "electropop",
+            "USA",
+            "american"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 30871
+        },
+        {
+          "mbid": "3e5e509a-1ad8-46dd-a211-4b94afda2d40",
+          "name": "4cf",
+          "underground_score": 0.5,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 53153
+        },
+        {
+          "mbid": "spotify:7fHDTZfZ72OYE4XpaVE7yO",
+          "name": "Patchymate",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "United States"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 43923
+        },
+        {
+          "mbid": "lastfm:2slimey",
+          "name": "2slimey",
+          "underground_score": 0.5,
+          "tags": [
+            "dark plugg",
+            "noise",
+            "experimental hip-hop",
+            "experimental",
+            "shrimp"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 89410
+        },
+        {
+          "mbid": "dd6f94d6-e4f7-4ac3-b65f-8bd57630b1f0",
+          "name": "twst",
+          "underground_score": 0.5,
+          "tags": [
+            "pop",
+            "electropop",
+            "indie pop",
+            "female vocalists",
+            "electronic"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 57157
+        },
+        {
+          "mbid": "3929b9a3-c550-48ce-aa91-f28d445eeb77",
+          "name": "Jedwill",
+          "underground_score": 0.7,
+          "tags": [
+            "hip hop",
+            "electronic",
+            "cloud rap",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 34612
+        },
+        {
+          "mbid": "3c1bb15f-b211-4c53-9a13-18791d9b63b6",
+          "name": "\u10e6DJ\u9b54\u5973\u3063\u5a18\u30df\u30e9\u30af\u308b\u3093\u10e6",
+          "underground_score": 1.0,
+          "tags": [
+            "Nightcore",
+            "hardcore",
+            "pop",
+            "Hard Dance",
+            "trap"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 1609
+        },
+        {
+          "mbid": "0cf71afb-5bfc-4cba-b7cc-1468fd84dcb5",
+          "name": "DJ Re:Code",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "digicore",
+            "electronic",
+            "new york",
+            "lgbt"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 31735
+        },
+        {
+          "mbid": "8ba83794-4bc6-4681-912c-fb18bbf903c2",
+          "name": "Jade Nicole",
+          "underground_score": 0.85,
+          "tags": [
+            "pop",
+            "electropop",
+            "bully",
+            "electronic",
+            "synthwave"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 12355
+        },
+        {
+          "mbid": "cf8ed4f6-baa4-4915-a142-4344d1190573",
+          "name": "Hunnygloss",
+          "underground_score": 0.5,
+          "tags": [
+            "pop",
+            "dance",
+            "hyperpop",
+            "electropop",
+            "female vocalists"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 59378
+        },
+        {
+          "mbid": "spotify:7B633K293rPBI6DyO7IVzy",
+          "name": "GaSOIID",
+          "underground_score": 1.0,
+          "tags": [
+            "Hard Dance",
+            "trap",
+            "Nightcore",
+            "footwork",
+            "Electronic Pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 2770
+        },
+        {
+          "mbid": "85f79fb3-d84f-4fba-b8d2-fb9055c993df",
+          "name": "S4BRINA",
+          "underground_score": 0.85,
+          "tags": [
+            "pop",
+            "electronic",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 14014
+        },
+        {
+          "mbid": "spotify:7aU24qpooQbJgquWphpTdT",
+          "name": "Can Of Bliss",
+          "underground_score": 0.7,
+          "tags": [
+            "furry",
+            "hyperpop",
+            "glitchcore",
+            "indie",
+            "power pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 38461
+        },
+        {
+          "mbid": "spotify:4qUk32dcxFNOv89M0iUItq",
+          "name": "Shygirl, Cosha, Club Shy",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 2637
+        },
+        {
+          "mbid": "lastfm:food_house,_gupi_&_fraxiom",
+          "name": "food house, Gupi & Fraxiom",
+          "underground_score": 0.85,
+          "tags": [
+            "United States"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 5535
+        },
+        {
+          "mbid": "spotify:2Vcda6Z3Ugbq2ZlYnKGGfC",
+          "name": "egobreak",
+          "underground_score": 0.7,
+          "tags": [
+            "USA",
+            "rap",
+            "supertrap",
+            "digicore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 39484
+        },
+        {
+          "mbid": "9ee2cfe5-135b-4186-835f-74d859c92533",
+          "name": "Skyte",
+          "underground_score": 0.5,
+          "tags": [
+            "electronic",
+            "rap",
+            "Hip-Hop",
+            "trap",
+            "pluggnb"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 57999
+        },
+        {
+          "mbid": "5a156d86-2e0c-4af4-9754-237ff99d1072",
+          "name": "xul south pacific trading co. est 1918",
+          "underground_score": 0.85,
+          "tags": [
+            "noise",
+            "experimental",
+            "comedy rap",
+            "black metal",
+            "Jerk"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 14887
+        },
+        {
+          "mbid": "59a5ddf9-9de8-4c9a-9691-a50e45ef4587",
+          "name": "agelast222",
+          "underground_score": 0.85,
+          "tags": [
+            "cloud rap",
+            "Drum and bass",
+            "trap",
+            "Austria",
+            "surge"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 13786
+        },
+        {
+          "mbid": "8a0a93fc-6286-4d2e-9e20-01b76b953911",
+          "name": "Alaska Reid",
+          "underground_score": 0.5,
+          "tags": [
+            "electronic",
+            "indie pop",
+            "synthpop",
+            "dream pop",
+            "art pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 51477
+        },
+        {
+          "mbid": "spotify:4vG5pFlD4iDYfqnpvkDA1n",
+          "name": "kumosai",
+          "underground_score": 0.85,
+          "tags": [
+            "digicore",
+            "touhou",
+            "cloud rap",
+            "surge",
+            "sigilkore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 19385
+        },
+        {
+          "mbid": "6e878f15-50aa-4087-966a-f3cc1f06dce3",
+          "name": "Egobreak",
+          "underground_score": 0.7,
+          "tags": [
+            "USA",
+            "rap",
+            "supertrap",
+            "digicore"
+          ],
+          "formation_year": null,
+          "country": "US",
+          "lastfm_listeners": 39484
+        },
+        {
+          "mbid": "2a70a5a4-a71b-4274-8336-7b628d65f266",
+          "name": "Niomi",
+          "underground_score": 0.85,
+          "tags": [
+            "hyperpop",
+            "american",
+            "queer",
+            "us",
+            "america"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 11108
+        },
+        {
+          "mbid": "96809f23-348f-4ff3-a594-998ca8456422",
+          "name": "Texas Baby",
+          "underground_score": 1.0,
+          "tags": [
+            "Hard Dance",
+            "trap",
+            "footwork",
+            "Nightcore",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 317
+        },
+        {
+          "mbid": "ba5bc02f-e1fe-4c73-9400-971288bdb31f",
+          "name": "HYRA",
+          "underground_score": 0.5,
+          "tags": [
+            "pop",
+            "electronic",
+            "dance",
+            "electropop",
+            "death metal"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 56939
+        },
+        {
+          "mbid": "b0a1cb9a-e706-4f5f-82bb-52dd46da7f2e",
+          "name": "jequya",
+          "underground_score": 0.7,
+          "tags": [
+            "plugg",
+            "glitchcore",
+            "digicore",
+            "cloud rap",
+            "emoplugg"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 38485
+        },
+        {
+          "mbid": "spotify:0L8sap4ZFgqYMTfmrCXS1e",
+          "name": "sayako",
+          "underground_score": 0.5,
+          "tags": [
+            "cloud rap",
+            "plugg",
+            "hip house",
+            "german",
+            "digicore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 79650
+        },
+        {
+          "mbid": "spotify:3bfT2u8Dz3hoSDvSZ8KyqH",
+          "name": "BOY SIM",
+          "underground_score": 0.7,
+          "tags": [
+            "pc music"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 27297
+        },
+        {
+          "mbid": "caf70709-3d30-4bb3-9519-3e8f48762d85",
+          "name": "Ryan Leahan",
+          "underground_score": 0.5,
+          "tags": [
+            "indie",
+            "alternative",
+            "hyperpop",
+            "Indie Hip Hop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 85380
+        },
+        {
+          "mbid": "fcc68ce4-1a64-46c3-bca1-67a5c5a41b61",
+          "name": "Lil Data",
+          "underground_score": 0.85,
+          "tags": [
+            "electronic",
+            "wonky",
+            "pc music",
+            "bubblegum bass",
+            "idm"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 13194
+        },
+        {
+          "mbid": "lastfm:death_souljah",
+          "name": "death souljah",
+          "underground_score": 0.7,
+          "tags": [
+            "cloud rap",
+            "ambient",
+            "experimental hip hop",
+            "goat",
+            "peak"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 48320
+        },
+        {
+          "mbid": "spotify:04r9MV32OBMdMv1eJ9I1CP",
+          "name": "DJ Re:code",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "digicore",
+            "electronic",
+            "new york",
+            "lgbt"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 31735
+        },
+        {
+          "mbid": "43846dcc-a009-464a-879f-efc4a99b5713",
+          "name": "Nova May",
+          "underground_score": 0.7,
+          "tags": [
+            "pop",
+            "Electroclash",
+            "hyperpop",
+            "electropop",
+            "dance"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 26928
+        },
+        {
+          "mbid": "6fa3a6a6-5980-4008-908d-5ac4ba44028c",
+          "name": "FREE.99",
+          "underground_score": 0.85,
+          "tags": [
+            "experimental",
+            "Rave",
+            "electro-industrial",
+            "greece",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 15777
+        },
+        {
+          "mbid": "lastfm:glaive_&_kurtains",
+          "name": "Glaive & Kurtains",
+          "underground_score": 1.0,
+          "tags": [
+            "hyperpop",
+            "digicore",
+            "slowsilver03",
+            "glaive",
+            "kurtains"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 1071
+        },
+        {
+          "mbid": "spotify:4UJFDa14HZ1lds4aLK1GmK",
+          "name": "Agatka Iskra",
+          "underground_score": 0.85,
+          "tags": [
+            "hyperpop",
+            "hardcore",
+            "Electronic Pop",
+            "Rave",
+            "trap"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 18142
+        },
+        {
+          "mbid": "115e08e4-4679-4678-8675-41ccabb2e5b3",
+          "name": "Lauren Duffus",
+          "underground_score": 0.7,
+          "tags": [
+            "electronic",
+            "ambient",
+            "experimental",
+            "dance",
+            "abstract"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 35373
+        },
+        {
+          "mbid": "9a2a4207-2daa-4e2a-bb7c-edc88ee0cc62",
+          "name": "DJ LIFELINE",
+          "underground_score": 1.0,
+          "tags": [
+            "electronic",
+            "hyperpop",
+            "post-internet",
+            "Post-Club",
+            "bubblegum bass"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 822
+        },
+        {
+          "mbid": "7a15b5b3-04f7-489b-8311-d8e5cf3de178",
+          "name": "PAS TASTA",
+          "underground_score": 0.85,
+          "tags": [
+            "j-pop",
+            "pop",
+            "japan",
+            "electronic",
+            "hyperpop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 17274
+        },
+        {
+          "mbid": "a288b318-63c8-4ea5-8eb5-071234bf0848",
+          "name": "Rakky Ripper",
+          "underground_score": 0.7,
+          "tags": [
+            "hyperpop",
+            "bubblegum bass",
+            "electropop",
+            "spanish",
+            "trap"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 41072
+        },
+        {
+          "mbid": "b3067938-52cb-45d4-83a3-3ef9f3d243db",
+          "name": "To Oscar",
+          "underground_score": 0.85,
+          "tags": [
+            "indietronica",
+            "hyperpop",
+            "pop",
+            "electronic",
+            "alternative"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 7830
+        },
+        {
+          "mbid": "ad0b16de-021c-4e3b-8d60-777419371c03",
+          "name": "princess paparazzi",
+          "underground_score": 0.7,
+          "tags": [
+            "pop",
+            "hyperpop",
+            "Electroclash",
+            "electronic",
+            "USA"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 22835
+        },
+        {
+          "mbid": "a9b70858-91ec-4ca7-a7c7-2c451c579385",
+          "name": "Koraii",
+          "underground_score": 0.85,
+          "tags": [
+            "experimental",
+            "electronic",
+            "australian",
+            "atmospheric",
+            "future bass"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 18251
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "size": 54,
+      "avg_year": 1981.5,
+      "avg_underground": 0.674,
+      "top_tags": [
+        "indie",
+        "shoegaze",
+        "dream pop",
+        "indie rock",
+        "indie pop",
+        "experimental",
+        "alternative",
+        "math rock",
+        "post-hardcore",
+        "noise rock"
+      ],
+      "top_genres": [],
+      "geography": [
+        "GB",
+        "US"
+      ],
+      "cohesion_score": 0.583,
+      "description": "This cluster represents a cross-Atlantic network of artists operating in the liminal space between dreamy indie pop and more abrasive experimental rock, unified by their willingness to subvert conventional song structures with mathematical precision and textural density. While rooted in the foundational sounds of shoegaze and dream pop, these musicians consistently push beyond those genres' more passive tendencies, incorporating the angular rhythmic complexity of math rock and the sonic adventurousness of experimental music to create something more intellectually engaged and deliberately challenging. The scene appears to bridge the gap between the introspective, effects-heavy soundscapes of 4AD-style indie and the cerebral deconstructions of post-rock, suggesting a shared aesthetic philosophy that values both emotional resonance and compositional sophistication. Their moderate underground status reflects music that's too experimentally minded for mainstream indie audiences yet too melodically grounded for the deep experimental underground.",
+      "lineage_roots": [],
+      "artists": [
+        {
+          "mbid": "d0f23be7-c86a-4c3b-b674-037cf4cd47ec",
+          "name": "The Wicked Farleys",
+          "underground_score": 0.85,
+          "tags": [
+            "noise pop",
+            "indie rock",
+            "math pop",
+            "emo",
+            "post-hardcore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 12277
+        },
+        {
+          "mbid": "ebaf6c97-3b87-44f0-a6bc-a51cc10ed71d",
+          "name": "Mark Van Hoen",
+          "underground_score": 0.85,
+          "tags": [
+            "electronic",
+            "ambient",
+            "experimental",
+            "shoegaze",
+            "idm"
+          ],
+          "formation_year": 1966,
+          "country": "GB",
+          "lastfm_listeners": 19376
+        },
+        {
+          "mbid": "lastfm:\u77f3\u539f\u8208",
+          "name": "\u77f3\u539f\u8208",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 8
+        },
+        {
+          "mbid": "bd07b916-24a7-4c7f-ae7f-a481def472e2",
+          "name": "Daren Seymour",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 14
+        },
+        {
+          "mbid": "f6fd63e6-e65d-4856-b7eb-df05893749b6",
+          "name": "Mark Clifford",
+          "underground_score": 1.0,
+          "tags": [
+            "drone",
+            "ambient",
+            "electronic",
+            "experimental",
+            "UK"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 111
+        },
+        {
+          "mbid": "d512ed79-f98b-4d07-b074-575fabc8bdab",
+          "name": "Sarah Peacock",
+          "underground_score": 1.0,
+          "tags": [
+            "country",
+            "folk",
+            "singer-songwriter",
+            "rock",
+            "alternative"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 550
+        },
+        {
+          "mbid": "04f87a13-bedd-45bc-9473-163384ab8c63",
+          "name": "Justin Fletcher",
+          "underground_score": 0.85,
+          "tags": [
+            "kids",
+            "black metal",
+            "british",
+            "death metal",
+            "Blackened Death Metal"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 14327
+        },
+        {
+          "mbid": "976384ec-334e-4359-93ee-1b87f8c72031",
+          "name": "Steve George",
+          "underground_score": 1.0,
+          "tags": [],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 23
+        },
+        {
+          "mbid": "30ec31e4-3374-4774-a9a6-691b81942eed",
+          "name": "Adam Franklin",
+          "underground_score": 0.85,
+          "tags": [
+            "indie rock",
+            "rock",
+            "singer-songwriter",
+            "alternative",
+            "dream pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 7420
+        },
+        {
+          "mbid": "cef4006f-d05e-4fa6-b628-514ef4e1bbbd",
+          "name": "PEE",
+          "underground_score": 0.85,
+          "tags": [
+            "math rock",
+            "indie rock",
+            "math pop",
+            "indie",
+            "midwest emo"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 5224
+        },
+        {
+          "mbid": "61cdae6d-36a4-4a37-89a8-df3bd481525d",
+          "name": "Adi Vines",
+          "underground_score": 0.5,
+          "tags": [],
+          "formation_year": null,
+          "country": "GB",
+          "lastfm_listeners": null
+        },
+        {
+          "mbid": "6a340e0b-5022-4a2b-bc7d-98f6aa07495f",
+          "name": "U.S. Maple",
+          "underground_score": 0.5,
+          "tags": [
+            "noise rock",
+            "math rock",
+            "experimental",
+            "post-rock",
+            "noise"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 51357
+        },
+        {
+          "mbid": "50bc8ea3-a19b-494c-b459-63bf7dcf2360",
+          "name": "Trementina",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "dream pop",
+            "indie",
+            "chilean",
+            "chile"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 94115
+        },
+        {
+          "mbid": "c7ce0ddd-4118-45ad-8852-8a9525d681f2",
+          "name": "Moonshake",
+          "underground_score": 0.7,
+          "tags": [
+            "post-rock",
+            "shoegaze",
+            "Experimental Rock",
+            "post-punk",
+            "experimental"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 28535
+        },
+        {
+          "mbid": "906e24c4-9700-48e5-a591-dba382f9169f",
+          "name": "xela fella",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "Grunge",
+            "noise pop",
+            "United States",
+            "shoe gaze"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 83173
+        },
+        {
+          "mbid": "2b5aa8ba-0132-4032-88d8-3f01d97e3c7a",
+          "name": "Laddio Bolocko",
+          "underground_score": 0.85,
+          "tags": [
+            "noise rock",
+            "experimental",
+            "Experimental Rock",
+            "post-rock",
+            "jazz"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 18641
+        },
+        {
+          "mbid": "a21a3ff2-064c-452d-8aea-3d4039ab70d6",
+          "name": "Dean Wareham",
+          "underground_score": 0.7,
+          "tags": [
+            "dream pop",
+            "psychedelic",
+            "indie rock",
+            "indie",
+            "rock"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 42447
+        },
+        {
+          "mbid": "886f9705-b334-4375-9b17-ec2ad4ccc858",
+          "name": "North of America",
+          "underground_score": 0.85,
+          "tags": [
+            "math rock",
+            "indie",
+            "emo",
+            "Canadian",
+            "indie rock"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 14986
+        },
+        {
+          "mbid": "eed766e0-492f-44ab-a3f3-800eb5792de5",
+          "name": "Glixen",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "dream pop",
+            "indie rock",
+            "indie",
+            "alternative"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 97235
+        },
+        {
+          "mbid": "eaccd6e7-ebcc-4dc1-b004-e33ebcc8d7cd",
+          "name": "Heavy Vegetable",
+          "underground_score": 0.85,
+          "tags": [
+            "math rock",
+            "indie rock",
+            "Rob Crow",
+            "math pop",
+            "indie pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 8268
+        },
+        {
+          "mbid": "05d60163-95a2-44e9-9c4e-83b0677d3200",
+          "name": "Damon & Naomi",
+          "underground_score": 0.5,
+          "tags": [
+            "dream pop",
+            "indie",
+            "folk",
+            "indie pop",
+            "shoegaze"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 57068
+        },
+        {
+          "mbid": "eb526f04-1dd0-42eb-8386-1ff6579926a1",
+          "name": "Shop Assistants",
+          "underground_score": 0.5,
+          "tags": [
+            "indie pop",
+            "twee",
+            "c86",
+            "indie",
+            "post-punk"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 81300
+        },
+        {
+          "mbid": "87e27246-8c40-407f-bfb3-5dc416557eeb",
+          "name": "Royal Trux",
+          "underground_score": 0.5,
+          "tags": [
+            "noise rock",
+            "Lo-Fi",
+            "experimental",
+            "indie rock",
+            "indie"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 91926
+        },
+        {
+          "mbid": "c2f0fb92-4e5d-4136-97d9-043e10ee1154",
+          "name": "Dolly Mixture",
+          "underground_score": 0.5,
+          "tags": [
+            "indie pop",
+            "twee",
+            "post-punk",
+            "twee pop",
+            "indie"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 83893
+        },
+        {
+          "mbid": "2f1c9b02-cbb3-4581-aa53-1d39436c431b",
+          "name": "Forsaken Autumn",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "dream pop",
+            "chinese",
+            "sinogaze",
+            "China"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 69305
+        },
+        {
+          "mbid": "lastfm:dottie",
+          "name": "Dottie",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "dream pop",
+            "ambient",
+            "indie",
+            "electronic"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 99499
+        },
+        {
+          "mbid": "65e1b41c-c719-4237-9f72-c2f07ea19355",
+          "name": "Lync",
+          "underground_score": 0.7,
+          "tags": [
+            "post-hardcore",
+            "emo",
+            "indie rock",
+            "Lo-Fi",
+            "indie"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 34750
+        },
+        {
+          "mbid": "1cd29434-ae52-4651-b620-0c2c53e39c55",
+          "name": "Trumans Water",
+          "underground_score": 0.85,
+          "tags": [
+            "noise rock",
+            "Lo-Fi",
+            "math rock",
+            "indie rock",
+            "post-hardcore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 11141
+        },
+        {
+          "mbid": "f189c7ca-b76e-4ffc-a17e-f316cdaadf8a",
+          "name": "The Raymond Brake",
+          "underground_score": 1.0,
+          "tags": [
+            "indie rock",
+            "math rock",
+            "indie",
+            "shoegaze",
+            "emo"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 2191
+        },
+        {
+          "mbid": "4a5aaddc-e406-4feb-955f-0afc24b90c30",
+          "name": "Brittle Stars",
+          "underground_score": 0.5,
+          "tags": [
+            "twee",
+            "indie pop",
+            "dream pop",
+            "shoegaze",
+            "indie"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 79385
+        },
+        {
+          "mbid": "41d7cb93-1d86-4615-b03c-315081b20e1b",
+          "name": "Thingy",
+          "underground_score": 0.5,
+          "tags": [
+            "math rock",
+            "Rob Crow",
+            "indie",
+            "alternative",
+            "math pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 67520
+        },
+        {
+          "mbid": "45fdf967-5a18-417a-be32-7dda5c0ebbb0",
+          "name": "The Dead C",
+          "underground_score": 0.7,
+          "tags": [
+            "noise rock",
+            "noise",
+            "experimental",
+            "Avant-Garde",
+            "New Zealand"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 34674
+        },
+        {
+          "mbid": "dd5c73d5-53df-4be1-8290-a5d2082159b1",
+          "name": "The Red Krayola",
+          "underground_score": 0.5,
+          "tags": [
+            "experimental",
+            "psychedelic",
+            "Psychedelic Rock",
+            "Avant-Garde",
+            "Experimental Rock"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 64296
+        },
+        {
+          "mbid": "ede96d89-515f-4b00-9635-2c5f5a1746fb",
+          "name": "The Aislers Set",
+          "underground_score": 0.5,
+          "tags": [
+            "indie pop",
+            "twee",
+            "indie",
+            "female vocalists",
+            "twee pop"
+          ],
+          "formation_year": 1997,
+          "country": "US",
+          "lastfm_listeners": 95501
+        },
+        {
+          "mbid": "2b76cb08-c215-4f6e-847c-d369864b1789",
+          "name": "Vitreous Humor",
+          "underground_score": 0.7,
+          "tags": [
+            "emo",
+            "post-hardcore",
+            "indie",
+            "indie rock",
+            "midwest emo"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 20154
+        },
+        {
+          "mbid": "f7cfcbd7-7fb6-41cc-925d-4cd94fb6b230",
+          "name": "Six Finger Satellite",
+          "underground_score": 0.7,
+          "tags": [
+            "noise rock",
+            "post-punk",
+            "experimental",
+            "post-hardcore",
+            "real post-hardcore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 39778
+        },
+        {
+          "mbid": "3855c18f-2bc9-4c51-aad1-00804a8ceae5",
+          "name": "Shuttle358",
+          "underground_score": 0.7,
+          "tags": [
+            "ambient",
+            "glitch",
+            "minimal",
+            "electronic",
+            "experimental"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 47747
+        },
+        {
+          "mbid": "d4b064a0-5567-4930-a359-16fadfa7941b",
+          "name": "Cows",
+          "underground_score": 0.5,
+          "tags": [
+            "noise rock",
+            "post-punk",
+            "punk",
+            "noise",
+            "post-hardcore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 68757
+        },
+        {
+          "mbid": "ca1133e9-ab8c-4bac-9d2c-9b5bfa9f5010",
+          "name": "The Nightblooms",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "dream pop",
+            "dutch",
+            "netherlands",
+            "indie"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 81197
+        },
+        {
+          "mbid": "69d65f8b-926c-4533-938b-84982fd31545",
+          "name": "s.e. lane",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 86207
+        },
+        {
+          "mbid": "99b2419f-2de6-42ad-b2ec-cf8efaf73969",
+          "name": "Cub",
+          "underground_score": 0.5,
+          "tags": [
+            "indie pop",
+            "twee",
+            "cuddlecore",
+            "indie",
+            "female vocalists"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 80017
+        },
+        {
+          "mbid": "lastfm:jo's_moving_day",
+          "name": "Jo's Moving Day",
+          "underground_score": 0.7,
+          "tags": [
+            "shoegaze",
+            "dream pop",
+            "China",
+            "alternative",
+            "c-rock"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 37125
+        },
+        {
+          "mbid": "e79255ed-14bc-4f32-96c8-633e14cb2627",
+          "name": "Gaze",
+          "underground_score": 0.7,
+          "tags": [
+            "twee",
+            "indie pop",
+            "indie",
+            "canada",
+            "female vocalists"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 47059
+        },
+        {
+          "mbid": "591079b7-5566-4876-b9a5-ab766e90d565",
+          "name": "Mars Accelerator",
+          "underground_score": 1.0,
+          "tags": [
+            "math rock",
+            "indie rock",
+            "post-hardcore",
+            "math pop",
+            "space rock"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 2764
+        },
+        {
+          "mbid": "cf3b70ac-734a-43ad-9d0c-c2680592cc0b",
+          "name": "Burrrn",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "japanese",
+            "Japanese Shoegaze",
+            "j-shoegaze",
+            "j-gaze"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 83417
+        },
+        {
+          "mbid": "spotify:1YgLJNdUly3ovPX5AV1REZ",
+          "name": "AnviI",
+          "underground_score": 0.5,
+          "tags": [
+            "alternative",
+            "shoegaze",
+            "indie rock"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 50044
+        },
+        {
+          "mbid": "b8d2e1cd-1062-40ba-bd9c-d5f964631f1d",
+          "name": "Dean & Britta",
+          "underground_score": 0.5,
+          "tags": [
+            "dream pop",
+            "indie pop",
+            "indie",
+            "September",
+            "alternative"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 70418
+        },
+        {
+          "mbid": "5fab218a-a6e7-4317-9e5b-f68ff4d68166",
+          "name": "Brighter",
+          "underground_score": 0.7,
+          "tags": [
+            "indie pop",
+            "twee",
+            "Sarah Records",
+            "indie",
+            "twee pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 37120
+        },
+        {
+          "mbid": "9dcaa18c-4beb-4a3f-aed8-1fad189c2bb5",
+          "name": "Fawning",
+          "underground_score": 0.7,
+          "tags": [
+            "dream pop",
+            "shoegaze",
+            "dreampop",
+            "2020s",
+            "2010s"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 41331
+        },
+        {
+          "mbid": "e1420344-a7c4-454d-8279-036b079ca39e",
+          "name": "deer death",
+          "underground_score": 0.7,
+          "tags": [
+            "shoegaze",
+            "alternative rock",
+            "alternative",
+            "indie",
+            "Experimental Rock"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 36768
+        },
+        {
+          "mbid": "lastfm:pocari_sweet\u6ce2\u5361\u5229\u751c",
+          "name": "Pocari Sweet\u6ce2\u5361\u5229\u751c",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "chinese",
+            "alternative",
+            "dream pop",
+            "China"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 62884
+        },
+        {
+          "mbid": "c9227eab-add4-42cd-be8f-1bcb5566daa9",
+          "name": "Ultra Vivid Scene",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "post-punk",
+            "4ad",
+            "indie",
+            "alternative"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 86788
+        },
+        {
+          "mbid": "57588466-031a-44d4-94a3-4451ca0b7817",
+          "name": "Piroshka",
+          "underground_score": 0.5,
+          "tags": [
+            "shoegaze",
+            "dream pop",
+            "Supergroup",
+            "indie",
+            "indie pop"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 67758
+        },
+        {
+          "mbid": "145edc69-0b12-45f6-ad0b-db19428ff54f",
+          "name": "Soul Whirling Somewhere",
+          "underground_score": 0.85,
+          "tags": [
+            "ethereal",
+            "ambient",
+            "dream pop",
+            "slowcore",
+            "sadcore"
+          ],
+          "formation_year": null,
+          "country": "",
+          "lastfm_listeners": 10143
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "detected_at": "2026-04-03T00:01:56.211685+00:00",
+    "parameters": {
+      "eps": 0.4,
+      "min_samples": 4
+    },
+    "total_clusters": 1,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 206,
+        "cohesion_score": 0.432,
+        "avg_underground": 0.685,
+        "top_tags": [
+          "electronic",
+          "hyperpop",
+          "pop",
+          "ambient",
+          "indie"
+        ],
+        "geography": [
+          "US",
+          "GB",
+          "Detroit"
+        ]
+      }
+    ]
+  },
+  {
+    "detected_at": "2026-04-03T00:02:09.390869+00:00",
+    "parameters": {
+      "eps": 0.3,
+      "min_samples": 4
+    },
+    "total_clusters": 6,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 11,
+        "cohesion_score": 0.973,
+        "avg_underground": 0.586,
+        "top_tags": [
+          "ambient",
+          "Soundtrack",
+          "dark ambient",
+          "electronic",
+          "video game music"
+        ],
+        "geography": [
+          "Los Angeles"
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "size": 4,
+        "cohesion_score": 0.971,
+        "avg_underground": 0.688,
+        "top_tags": [
+          "Electroclash",
+          "hyperpop",
+          "experimental",
+          "insane",
+          "glitchcore"
+        ],
+        "geography": [
+          "Detroit",
+          "AU"
+        ]
+      },
+      {
+        "cluster_id": 5,
+        "size": 14,
+        "cohesion_score": 0.766,
+        "avg_underground": 0.646,
+        "top_tags": [
+          "Gothic",
+          "ethereal",
+          "Gothic Rock",
+          "darkwave",
+          "goth"
+        ],
+        "geography": []
+      },
+      {
+        "cluster_id": 4,
+        "size": 6,
+        "cohesion_score": 0.73,
+        "avg_underground": 0.6,
+        "top_tags": [
+          "plugg",
+          "cloud rap",
+          "experimental",
+          "ambient",
+          "nod"
+        ],
+        "geography": []
+      },
+      {
+        "cluster_id": 2,
+        "size": 101,
+        "cohesion_score": 0.594,
+        "avg_underground": 0.7,
+        "top_tags": [
+          "hyperpop",
+          "electronic",
+          "pop",
+          "digicore",
+          "bubblegum bass"
+        ],
+        "geography": [
+          "US",
+          "BS",
+          "CA"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "size": 54,
+        "cohesion_score": 0.583,
+        "avg_underground": 0.674,
+        "top_tags": [
+          "indie",
+          "shoegaze",
+          "dream pop",
+          "indie rock",
+          "indie pop"
+        ],
+        "geography": [
+          "GB",
+          "US"
+        ]
+      }
+    ]
+  },
+  {
+    "detected_at": "2026-04-03T00:03:23.235809+00:00",
+    "parameters": {
+      "eps": 0.3,
+      "min_samples": 4
+    },
+    "total_clusters": 6,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "size": 11,
+        "cohesion_score": 0.973,
+        "avg_underground": 0.586,
+        "top_tags": [
+          "ambient",
+          "Soundtrack",
+          "dark ambient",
+          "electronic",
+          "video game music"
+        ],
+        "geography": [
+          "Los Angeles"
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "size": 4,
+        "cohesion_score": 0.971,
+        "avg_underground": 0.688,
+        "top_tags": [
+          "Electroclash",
+          "hyperpop",
+          "experimental",
+          "insane",
+          "glitchcore"
+        ],
+        "geography": [
+          "Detroit",
+          "AU"
+        ]
+      },
+      {
+        "cluster_id": 5,
+        "size": 14,
+        "cohesion_score": 0.766,
+        "avg_underground": 0.646,
+        "top_tags": [
+          "Gothic",
+          "ethereal",
+          "Gothic Rock",
+          "darkwave",
+          "goth"
+        ],
+        "geography": []
+      },
+      {
+        "cluster_id": 4,
+        "size": 6,
+        "cohesion_score": 0.73,
+        "avg_underground": 0.6,
+        "top_tags": [
+          "plugg",
+          "cloud rap",
+          "experimental",
+          "ambient",
+          "nod"
+        ],
+        "geography": []
+      },
+      {
+        "cluster_id": 2,
+        "size": 101,
+        "cohesion_score": 0.594,
+        "avg_underground": 0.7,
+        "top_tags": [
+          "hyperpop",
+          "electronic",
+          "pop",
+          "digicore",
+          "bubblegum bass"
+        ],
+        "geography": [
+          "US",
+          "BS",
+          "CA"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "size": 54,
+        "cohesion_score": 0.583,
+        "avg_underground": 0.674,
+        "top_tags": [
+          "indie",
+          "shoegaze",
+          "dream pop",
+          "indie rock",
+          "indie pop"
+        ],
+        "geography": [
+          "GB",
+          "US"
+        ]
+      }
+    ]
+  }
+]
