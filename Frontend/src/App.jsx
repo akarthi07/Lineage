@@ -7,10 +7,10 @@ import { useLineageQuery } from "./hooks/useLineageQuery";
 
 export default function App() {
   const navigate = useNavigate();
-  const { data, seeding, seedingArtist, loading, query } = useLineageQuery();
+  const { data, seeding, seedingArtist, searchTerm, loading, query } = useLineageQuery();
 
-  const handleSearch = (artistName) => {
-    query(artistName);
+  const handleSearch = (artistName, options = {}) => {
+    query(artistName, options);
     navigate("/lineage");
   };
 
@@ -28,6 +28,7 @@ export default function App() {
               data={data}
               seeding={seeding}
               artistName={seedingArtist}
+              searchTerm={searchTerm}
               onSearch={handleSearch}
               loading={loading}
             />

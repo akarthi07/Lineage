@@ -130,6 +130,43 @@ def get_artist_info(name: str) -> Optional[dict]:
     return result
 
 
+def get_artist_top_tracks(name: str, limit: int = 10) -> list[dict]:
+    """
+    Returns an artist's top tracks from Last.fm.
+    Each dict has: name, playcount, mbid, url.
+    """
+    cache_key = f"lastfm:artist:{name.lower()}:toptracks"
+    try:
+        r = _get_redis()
+        cached = r.get(cache_key)
+        if cached:
+            return json.loads(cached)
+    except Exception:
+        pass
+
+    data = _get({"method": "artist.getTopTracks", "artist": name, "limit": limit, "autocorrect": 1})
+    if not data:
+        return []
+
+    tracks = data.get("toptracks", {}).get("track", [])
+    result = []
+    for t in tracks:
+        result.append({
+            "name": t.get("name", ""),
+            "playcount": int(t.get("playcount", 0)),
+            "mbid": t.get("mbid", ""),
+            "url": t.get("url", ""),
+        })
+
+    try:
+        r = _get_redis()
+        r.setex(cache_key, 21600, json.dumps(result))
+    except Exception:
+        pass
+
+    return result
+
+
 def get_artist_tags(name: str) -> list[dict]:
     """
     Returns top tags with vote counts: [{name, count}].

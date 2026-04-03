@@ -21,6 +21,8 @@ def calculate_influence_strength(
     artist_b_underground_score: float,
     mb_relationship_type: Optional[str] = None,
     lastfm_match: Optional[float] = None,
+    shared_producers: int = 0,
+    has_sample_connection: bool = False,
 ) -> tuple[float, float]:
     """
     Returns (strength, confidence) both in [0.0, 1.0].
@@ -55,14 +57,18 @@ def calculate_influence_strength(
     # --- Last.fm similar artist score (behavioral signal) ---
     if lastfm_match is not None:
         sources_used += 1
-        if lastfm_match > 0.3:
+        if lastfm_match > 0.2:
             sources_agreeing += 1
-        lastfm_bonus = lastfm_match * 0.4
+        # Last.fm is the most reliable and widely-available signal
+        lastfm_bonus = lastfm_match * 0.6
+        # Floor: any Last.fm match > 0.05 guarantees a minimum connection
+        if lastfm_match > 0.05 and lastfm_bonus < 0.12:
+            lastfm_bonus = 0.12
     else:
         lastfm_bonus = 0.0
 
     # If no signal at all, don't create the relationship
-    if base_score == 0.0 and lastfm_bonus == 0.0:
+    if base_score == 0.0 and lastfm_bonus == 0.0 and shared_producers == 0 and not has_sample_connection:
         return 0.0, 0.0
 
     # --- Tag/genre overlap (metadata signal) ---
@@ -78,9 +84,20 @@ def calculate_influence_strength(
     if artist_a_underground_score > 0.7 or artist_b_underground_score > 0.7:
         underground_bonus = 0.05
 
+    # --- Production credit bonus ---
+    production_bonus = 0.0
+    if shared_producers > 0:
+        sources_used += 1
+        sources_agreeing += 1
+        production_bonus = min(0.3, 0.15 * shared_producers)
+    if has_sample_connection:
+        sources_used += 1
+        sources_agreeing += 1
+        production_bonus += 0.5
+
     strength = min(
         1.0,
-        base_score + lastfm_bonus + tag_overlap + temporal_bonus + underground_bonus,
+        base_score + lastfm_bonus + tag_overlap + temporal_bonus + underground_bonus + production_bonus,
     )
 
     # Confidence: based on how many sources agree

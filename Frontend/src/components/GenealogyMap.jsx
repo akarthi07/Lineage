@@ -43,17 +43,27 @@ function nodeColor(score) {
 }
 
 function edgeColor(sourceType) {
-  if (sourceType === "musicbrainz")       return COL_PURPLE;
-  if (sourceType === "lastfm_similar")    return COL_TEAL;
-  if (sourceType === "matrix_similarity") return COL_AMBER;
+  if (sourceType === "musicbrainz")          return COL_PURPLE;
+  if (sourceType === "lastfm_similar")       return COL_TEAL;
+  if (sourceType === "matrix_similarity")    return COL_AMBER;
+  if (sourceType === "embedding_similarity") return COL_TEAL;
+  if (sourceType === "audio_similarity")     return "#E879F9"; // pink-violet
+  if (sourceType === "lyric_similarity")     return "#FB923C"; // orange
+  if (sourceType === "production_link")      return "#34D399"; // emerald
+  if (sourceType === "fusion")               return "#94A3B8"; // slate
   return "#4B5069";
 }
 
 function edgeDash(sourceType) {
-  if (sourceType === "musicbrainz")       return null;    // solid
-  if (sourceType === "lastfm_similar")    return "8,5";   // dashed
-  if (sourceType === "matrix_similarity") return "5,3,2,3"; // dash-dot
-  return "3,6";                                           // dotted
+  if (sourceType === "musicbrainz")          return null;      // solid
+  if (sourceType === "lastfm_similar")       return "8,5";     // dashed
+  if (sourceType === "matrix_similarity")    return "5,3,2,3"; // dash-dot
+  if (sourceType === "embedding_similarity") return "3,6";     // dotted
+  if (sourceType === "audio_similarity")     return "6,4";     // dashed
+  if (sourceType === "lyric_similarity")     return "4,4";     // even dash
+  if (sourceType === "production_link")      return "8,3,2,3"; // dash-dot
+  if (sourceType === "fusion")               return "2,4";     // fine dots
+  return "3,6";
 }
 
 function edgeRelationLabel(edge) {
@@ -63,6 +73,11 @@ function edgeRelationLabel(edge) {
   ) return "influenced by";
   if (edge.source_type === "musicbrainz") return "connected";
   if (edge.source_type === "matrix_similarity") return "suggested connection";
+  if (edge.source_type === "embedding_similarity") return "vector proximity";
+  if (edge.source_type === "audio_similarity") return "sonic similarity";
+  if (edge.source_type === "lyric_similarity") return "lyrical kinship";
+  if (edge.source_type === "production_link") return "shared production";
+  if (edge.source_type === "fusion") return "multi-signal match";
   return "from the same scene";
 }
 
@@ -171,9 +186,14 @@ export default function GenealogyMap({
 
     // Arrow markers
     [
-      { id: "arrow-mb",     color: COL_PURPLE },
-      { id: "arrow-lfm",    color: COL_TEAL   },
-      { id: "arrow-matrix", color: COL_AMBER  },
+      { id: "arrow-mb",     color: COL_PURPLE  },
+      { id: "arrow-lfm",    color: COL_TEAL    },
+      { id: "arrow-matrix", color: COL_AMBER   },
+      { id: "arrow-embed",  color: COL_TEAL    },
+      { id: "arrow-audio",  color: "#E879F9"   },
+      { id: "arrow-lyric",  color: "#FB923C"   },
+      { id: "arrow-prod",   color: "#34D399"   },
+      { id: "arrow-fusion", color: "#94A3B8"   },
       { id: "arrow-tag",    color: "#4B5069"   },
     ].forEach(({ id, color }) => {
       defs.append("marker")
@@ -256,9 +276,14 @@ export default function GenealogyMap({
           .attr("stroke-width",    (e) => Math.max(0.8, (e.strength ?? 0.5) * 2.8))
           .attr("stroke-opacity",  (e) => 0.28 + (e.confidence ?? 0.5) * 0.45)
           .attr("marker-end",      (e) => {
-            if (e.source_type === "musicbrainz")       return "url(#arrow-mb)";
-            if (e.source_type === "lastfm_similar")    return "url(#arrow-lfm)";
-            if (e.source_type === "matrix_similarity") return "url(#arrow-matrix)";
+            if (e.source_type === "musicbrainz")          return "url(#arrow-mb)";
+            if (e.source_type === "lastfm_similar")       return "url(#arrow-lfm)";
+            if (e.source_type === "matrix_similarity")    return "url(#arrow-matrix)";
+            if (e.source_type === "embedding_similarity") return "url(#arrow-embed)";
+            if (e.source_type === "audio_similarity")     return "url(#arrow-audio)";
+            if (e.source_type === "lyric_similarity")     return "url(#arrow-lyric)";
+            if (e.source_type === "production_link")      return "url(#arrow-prod)";
+            if (e.source_type === "fusion")               return "url(#arrow-fusion)";
             return "url(#arrow-tag)";
           });
 
@@ -278,6 +303,11 @@ export default function GenealogyMap({
                 <p class="tt-source" style="color:${edgeColor(e.source_type)}">
                   ${e.source_type === "musicbrainz" ? "Documented · MusicBrainz"
                     : e.source_type === "matrix_similarity" ? "Suggested · Similarity Matrix"
+                    : e.source_type === "embedding_similarity" ? "Vector proximity · Embedding"
+                    : e.source_type === "audio_similarity" ? "Sonic match · Audio Analysis"
+                    : e.source_type === "lyric_similarity" ? "Thematic match · Lyric Analysis"
+                    : e.source_type === "production_link" ? "Shared credits · Production Network"
+                    : e.source_type === "fusion" ? "Multi-signal · Fusion Engine"
                     : "Last.fm listener data"}
                 </p>
               </div>`,
@@ -688,6 +718,30 @@ export default function GenealogyMap({
                 <line x1="0" y1="2" x2="24" y2="2" stroke={COL_TEAL} strokeWidth="1.5" strokeDasharray="5,3" />
               </svg>
               <span className="text-2xs" style={{ color: "#8B8FA3" }}>Scene connection</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg width="24" height="4" viewBox="0 0 24 4">
+                <line x1="0" y1="2" x2="24" y2="2" stroke={COL_TEAL} strokeWidth="1.5" strokeDasharray="3,6" />
+              </svg>
+              <span className="text-2xs" style={{ color: "#8B8FA3" }}>Embedding proximity</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg width="24" height="4" viewBox="0 0 24 4">
+                <line x1="0" y1="2" x2="24" y2="2" stroke="#E879F9" strokeWidth="1.5" strokeDasharray="6,4" />
+              </svg>
+              <span className="text-2xs" style={{ color: "#8B8FA3" }}>Sonic similarity</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg width="24" height="4" viewBox="0 0 24 4">
+                <line x1="0" y1="2" x2="24" y2="2" stroke="#FB923C" strokeWidth="1.5" strokeDasharray="4,4" />
+              </svg>
+              <span className="text-2xs" style={{ color: "#8B8FA3" }}>Lyrical kinship</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg width="24" height="4" viewBox="0 0 24 4">
+                <line x1="0" y1="2" x2="24" y2="2" stroke="#34D399" strokeWidth="1.5" strokeDasharray="8,3,2,3" />
+              </svg>
+              <span className="text-2xs" style={{ color: "#8B8FA3" }}>Shared production</span>
             </div>
           </div>
         </div>

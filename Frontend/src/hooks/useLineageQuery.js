@@ -10,6 +10,7 @@ export function useLineageQuery() {
   const [data, setData] = useState(null);
   const [seeding, setSeeding] = useState(false);
   const [seedingArtist, setSeedingArtist] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -17,6 +18,7 @@ export function useLineageQuery() {
     setLoading(true);
     setError(null);
     setSeeding(false);
+    setSearchTerm(artistName);
 
     if (USE_MOCK) {
       // Simulate network delay
@@ -67,5 +69,5 @@ export function useLineageQuery() {
     }
   }, []);
 
-  return { data, seeding, seedingArtist, loading, error, query };
+  return { data, seeding, seedingArtist, searchTerm, loading, error, query };
 }

@@ -157,6 +157,116 @@ def get_artist_relationships(mbid: str) -> list[dict]:
     return artist_rels
 
 
+def get_artist_recordings(mbid: str, limit: int = 25) -> list[dict]:
+    """
+    Get an artist's recordings (tracks) from MusicBrainz.
+    Returns list of {mbid, title, first_release_year}.
+    """
+    cache_key = f"mb:artist:{mbid}:recordings"
+    try:
+        r = _get_redis()
+        cached = r.get(cache_key)
+        if cached:
+            return json.loads(cached)
+    except Exception:
+        pass
+
+    data = _get_with_retry(
+        f"{MB_BASE}/recording/",
+        {"artist": mbid, "limit": limit, "fmt": "json"},
+    )
+    if not data:
+        return []
+
+    recordings = []
+    for rec in data.get("recordings", []):
+        year = None
+        frd = rec.get("first-release-date", "")
+        if frd and len(frd) >= 4:
+            try:
+                year = int(frd[:4])
+            except ValueError:
+                pass
+        recordings.append({
+            "mbid": rec.get("id", ""),
+            "title": rec.get("title", ""),
+            "first_release_year": year,
+        })
+
+    try:
+        r = _get_redis()
+        r.setex(cache_key, 86400, json.dumps(recordings))
+    except Exception:
+        pass
+
+    return recordings
+
+
+def get_recording_credits(recording_mbid: str) -> list[dict]:
+    """
+    Fetch recording credits (producer, engineer, mixer, etc.) from MusicBrainz.
+
+    Uses ?inc=artist-rels on the recording endpoint.
+    Returns list of {type, artist_mbid, artist_name, role}.
+    """
+    cache_key = f"mb:recording:{recording_mbid}:credits"
+    try:
+        r = _get_redis()
+        cached = r.get(cache_key)
+        if cached:
+            return json.loads(cached)
+    except Exception:
+        pass
+
+    data = _get_with_retry(
+        f"{MB_BASE}/recording/{recording_mbid}",
+        {"inc": "artist-rels+recording-rels", "fmt": "json"},
+    )
+    if not data:
+        return []
+
+    credits = []
+
+    # Artist relationships on the recording (producer, engineer, etc.)
+    for rel in data.get("relations", []):
+        rel_type = rel.get("type", "")
+        target_type = rel.get("target-type", "")
+
+        if target_type == "artist":
+            artist = rel.get("artist", {})
+            role = rel_type.lower()
+            # Filter to production-relevant roles
+            if any(keyword in role for keyword in [
+                "producer", "engineer", "mix", "master", "remix",
+                "arranger", "programming", "recording",
+            ]):
+                credits.append({
+                    "type": rel_type,
+                    "artist_mbid": artist.get("id", ""),
+                    "artist_name": artist.get("name", ""),
+                    "role": role,
+                })
+
+        # Recording-recording relationships (samples)
+        elif target_type == "recording":
+            other_rec = rel.get("recording", {})
+            if "sample" in rel.get("type", "").lower():
+                credits.append({
+                    "type": "samples",
+                    "recording_mbid": other_rec.get("id", ""),
+                    "recording_title": other_rec.get("title", ""),
+                    "role": "samples",
+                })
+
+    try:
+        r = _get_redis()
+        r.setex(cache_key, 86400, json.dumps(credits))
+    except Exception:
+        pass
+
+    return credits
+
+
 def get_artist_tags(mbid: str) -> list[dict]:
     """Return tags from a full artist+tags lookup (cached alongside rels call)."""
     cache_key = f"mb:artist:{mbid}:tags"

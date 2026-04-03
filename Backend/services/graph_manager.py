@@ -260,6 +260,9 @@ def get_lineage(
     # Enrich with matrix-suggested connections
     _enrich_with_matrix_suggestions(lineage, nodes_map, edges_set)
 
+    # Enrich with embedding-suggested connections
+    _enrich_with_embedding_suggestions(lineage, nodes_map, edges_set)
+
     return lineage
 
 
@@ -354,23 +357,92 @@ def _enrich_with_matrix_suggestions(
         logger.info(f"Added {added_nodes} matrix-suggested nodes, {added_edges} edges")
 
 
+def _enrich_with_embedding_suggestions(
+    lineage: LineageResult,
+    nodes_map: dict[str, ArtistNode],
+    existing_edges: set[tuple],
+    suggestions_per_node: int = 2,
+) -> None:
+    """
+    For each node in the lineage, find top embedding-similar artists that are
+    NOT already in the result. Adds them as 'embedding_similarity' edges
+    (dotted teal lines in the frontend).
+    """
+    from ml.embeddings.search_engine import get_vector_engine
 
-    return Artist(
-        mbid=node.get("mbid") or None,
-        spotify_id=node.get("spotify_id") or None,
-        lastfm_url=node.get("lastfm_url") or None,
-        name=node.get("name", ""),
-        lastfm_listeners=node.get("lastfm_listeners"),
-        lastfm_playcount=node.get("lastfm_playcount"),
-        spotify_popularity=node.get("spotify_popularity"),
-        spotify_followers=node.get("spotify_followers"),
-        genres=node.get("genres") or [],
-        tags=node.get("tags") or [],
-        formation_year=node.get("formation_year"),
-        country=node.get("country") or None,
-        image_url=node.get("image_url") or None,
-        underground_score=node.get("underground_score", 0.5),
-    )
+    engine = get_vector_engine()
+    if engine is None or not lineage.nodes:
+        return
+
+    existing_mbids = set(nodes_map.keys())
+    # Also include any nodes added by matrix suggestions
+    for node in lineage.nodes:
+        existing_mbids.add(node.id)
+
+    added_nodes = 0
+    added_edges = 0
+    max_suggestions = 6
+
+    for node in list(lineage.nodes):
+        if added_nodes >= max_suggestions:
+            break
+        if not engine.has_artist(node.id):
+            continue
+
+        similar = engine.search_similar(node.id, top_n=suggestions_per_node + 5)
+
+        count = 0
+        for other_mbid, score in similar:
+            if count >= suggestions_per_node or added_nodes >= max_suggestions:
+                break
+            if other_mbid in existing_mbids:
+                continue
+            edge_key = (node.id, other_mbid)
+            reverse_key = (other_mbid, node.id)
+            if edge_key in existing_edges or reverse_key in existing_edges:
+                continue
+            if score < 0.3:
+                continue
+
+            artist = get_artist(other_mbid)
+            if not artist:
+                continue
+
+            suggested_node = ArtistNode(
+                id=other_mbid,
+                name=artist.name,
+                mbid=artist.mbid,
+                spotify_id=artist.spotify_id,
+                lastfm_listeners=artist.lastfm_listeners,
+                spotify_popularity=artist.spotify_popularity,
+                underground_score=artist.underground_score,
+                genres=artist.genres,
+                tags=artist.tags,
+                formation_year=artist.formation_year,
+                country=artist.country,
+                image_url=artist.image_url,
+                depth_level=(node.depth_level or 0) + 1,
+            )
+            lineage.nodes.append(suggested_node)
+            existing_mbids.add(other_mbid)
+            added_nodes += 1
+
+            lineage.edges.append(Edge(
+                source=node.id,
+                target=other_mbid,
+                strength=round(min(score, 1.0), 3),
+                source_type="embedding_similarity",
+                confidence=round(min(score, 1.0), 3),
+            ))
+            existing_edges.add(edge_key)
+            added_edges += 1
+            count += 1
+
+    if added_nodes > 0:
+        lineage.metadata["embedding_suggestions"] = added_nodes
+        if "embedding" not in lineage.metadata.get("data_sources_used", []):
+            lineage.metadata["data_sources_used"].append("embedding")
+        logger.info(f"Added {added_nodes} embedding-suggested nodes, {added_edges} edges")
 
 
 def _node_to_artist_node(node, depth_level: int = 0) -> ArtistNode:

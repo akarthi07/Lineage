@@ -14,9 +14,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from config import settings
-from routers import query, artists, genesis, search, similarity
+from routers import query, artists, genesis, search, similarity, embeddings
 from services import graph_manager as gm
 from ml.similarity_engine import load_engine as load_similarity_engine
+from ml.embeddings.search_engine import load_vector_engine
+from ml.audio.audio_index import load_audio_engine
+from ml.lyrics.lyric_index import load_lyric_engine
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -47,6 +50,27 @@ async def lifespan(app: FastAPI):
         logger.info(f"Similarity matrix loaded: {engine.n} artists")
     else:
         logger.info("Similarity matrix not found — matrix search disabled")
+
+    # Load vector search engine (gracefully degrades if not yet trained)
+    vec_engine = load_vector_engine()
+    if vec_engine:
+        logger.info(f"Vector search engine loaded: {len(vec_engine.mbid_list)} artists")
+    else:
+        logger.info("Embedding files not found — vector search disabled")
+
+    # Load audio search engine
+    audio_engine = load_audio_engine()
+    if audio_engine:
+        logger.info(f"Audio search engine loaded: {audio_engine.index.ntotal} songs")
+    else:
+        logger.info("Audio index not found — audio search disabled")
+
+    # Load lyric search engine
+    lyric_engine = load_lyric_engine()
+    if lyric_engine:
+        logger.info(f"Lyric search engine loaded: {lyric_engine.index.ntotal} songs")
+    else:
+        logger.info("Lyrics index not found — lyric search disabled")
 
     yield
     logger.info("Shutting down — closing Neo4j driver")
@@ -104,6 +128,7 @@ app.include_router(artists.router, prefix="/api/artist",  tags=["Artists"])
 app.include_router(genesis.router, prefix="/api/genesis", tags=["Genesis"])
 app.include_router(search.router,     prefix="/api/search",     tags=["Search"])
 app.include_router(similarity.router, prefix="/api/similarity", tags=["Similarity"])
+app.include_router(embeddings.router, prefix="/api",            tags=["Embeddings"])
 
 
 # ---------------------------------------------------------------------------

@@ -11,7 +11,7 @@ from services import lastfm_client as lastfm
 from services import graph_manager as gm
 
 # Minimum strength threshold to create a relationship
-MIN_STRENGTH = 0.2
+MIN_STRENGTH = 0.10
 
 # MusicBrainz relationship types we care about
 RELEVANT_MB_TYPES = {

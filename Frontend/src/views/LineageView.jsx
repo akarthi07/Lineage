@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import GenealogyMap from "../components/GenealogyMap";
 import ArtistDetailPanel from "../components/ArtistDetailPanel";
 import SeedingProgress from "../components/SeedingProgress";
@@ -38,13 +38,95 @@ function DepthControl({ value, onChange }) {
   );
 }
 
+// ─── Loading animation ───────────────────────────────────────────────────────
+
+function LoadingAnimation({ artistName }) {
+  const [dots, setDots] = useState("");
+
+  useEffect(() => {
+    const t = setInterval(() => setDots((d) => (d.length >= 3 ? "" : d + ".")), 500);
+    return () => clearInterval(t);
+  }, []);
+
+  return (
+    <div className="absolute inset-0 flex flex-col items-center justify-center"
+      style={{ background: "#0A0B0F" }}>
+
+      {/* Pulsing rings */}
+      <div className="relative w-40 h-40 mb-8">
+        {[0, 1, 2, 3].map((i) => (
+          <div
+            key={i}
+            className="absolute inset-0 rounded-full border border-purple/30"
+            style={{
+              animation: `lineage-ripple 2.4s ease-out ${i * 0.6}s infinite`,
+            }}
+          />
+        ))}
+
+        {/* Center circle with initial */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div
+            className="w-16 h-16 rounded-full bg-purple/15 border-2 border-purple flex items-center justify-center"
+            style={{
+              animation: "lineage-pulse 2s ease-in-out infinite",
+              boxShadow: "0 0 30px rgba(124,92,252,0.3), inset 0 0 20px rgba(124,92,252,0.1)",
+            }}
+          >
+            <span className="text-xl font-bold text-purple">
+              {(artistName || "?").charAt(0).toUpperCase()}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Text */}
+      <p className="text-sm font-semibold text-text-primary mb-1">
+        Tracing lineage{dots}
+      </p>
+      {artistName && (
+        <p className="text-xs text-text-muted">{artistName}</p>
+      )}
+
+      {/* Style tag for keyframes */}
+      <style>{`
+        @keyframes lineage-ripple {
+          0% {
+            transform: scale(0.4);
+            opacity: 0.8;
+          }
+          100% {
+            transform: scale(1.8);
+            opacity: 0;
+          }
+        }
+        @keyframes lineage-pulse {
+          0%, 100% {
+            transform: scale(1);
+            box-shadow: 0 0 30px rgba(124,92,252,0.3), inset 0 0 20px rgba(124,92,252,0.1);
+          }
+          50% {
+            transform: scale(1.08);
+            box-shadow: 0 0 50px rgba(124,92,252,0.5), inset 0 0 30px rgba(124,92,252,0.2);
+          }
+        }
+      `}</style>
+    </div>
+  );
+}
+
 // ─── Filter Panel (slides in from right side) ─────────────────────────────────
 
 const DECADES = ["1950", "1960", "1970", "1980", "1990", "2000", "2010", "2020"];
 const SOURCE_OPTIONS = [
-  { value: null,               label: "All sources" },
-  { value: "musicbrainz",      label: "Documented (MusicBrainz)" },
-  { value: "lastfm_similar",   label: "Scene (Last.fm)" },
+  { value: null,                    label: "All sources" },
+  { value: "musicbrainz",           label: "Documented (MusicBrainz)" },
+  { value: "lastfm_similar",        label: "Scene (Last.fm)" },
+  { value: "matrix_similarity",     label: "Matrix similarity" },
+  { value: "embedding_similarity",  label: "Embedding proximity" },
+  { value: "audio_similarity",      label: "Sonic similarity" },
+  { value: "lyric_similarity",      label: "Lyrical kinship" },
+  { value: "production_link",       label: "Shared production" },
 ];
 
 function FilterPanel({ filters, onChange, onClose, data }) {
@@ -197,7 +279,7 @@ function FilterPanel({ filters, onChange, onClose, data }) {
 
 // ─── Main view ───────────────────────────────────────────────────────────────
 
-export default function LineageView({ data, seeding, artistName, onSearch, loading }) {
+export default function LineageView({ data, seeding, artistName, searchTerm, onSearch, loading }) {
   const [selectedNode, setSelectedNode] = useState(null);
   const [depth, setDepth]               = useState(3);
   const [filters, setFilters]           = useState({});
@@ -216,7 +298,7 @@ export default function LineageView({ data, seeding, artistName, onSearch, loadi
 
   const handleDepthChange = (d) => {
     setDepth(d);
-    if (rootNode) onSearch(rootNode.name);
+    if (rootNode) onSearch(rootNode.name, { depth: d });
   };
 
   if (seeding) {
@@ -330,13 +412,22 @@ export default function LineageView({ data, seeding, artistName, onSearch, loadi
 
         {/* Graph canvas — full height, no padding */}
         <div className="flex-1 relative min-w-0">
-          {data ? (
-            <GenealogyMap
-              data={data.results}
-              onNodeSelect={setSelectedNode}
-              selectedNode={selectedNode}
-              filters={filters}
-            />
+          {loading && !data ? (
+            <LoadingAnimation artistName={searchTerm} />
+          ) : data ? (
+            <>
+              <GenealogyMap
+                data={data.results}
+                onNodeSelect={setSelectedNode}
+                selectedNode={selectedNode}
+                filters={filters}
+              />
+              {loading && (
+                <div className="absolute inset-0 bg-bg/60 backdrop-blur-sm flex items-center justify-center z-10 animate-fade-in">
+                  <LoadingAnimation artistName={searchTerm} />
+                </div>
+              )}
+            </>
           ) : (
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8"
               style={{ background: "#0A0B0F" }}>
